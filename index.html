@@ -7,63 +7,59 @@
     <title>Manuals</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
   </head>
   <body>
-  <div class="container-fluid">
-    <div class="jumbotron_krx">
-      <div class="row">
-        <div class="col-xs-2">
-          <ul id="dashboardPill" class="nav nav-pills nav-stacked">
-            <li class="active"><a href="#softphones" data-toggle="pill">Настройка софтфонов</a></li>
-            <li><a href="#ipdevices" data-toggle="pill">Настройка аппаратов</a></li>
-            <li><a href="#outbound" data-toggle="pill">Исходящий call-центр</a></li>
-            <li><a href="#voice" data-toggle="pill">Голосовое управление</a></li>
-            <li><a href="#api" data-toggle="pill">API</a></li>
-          </ul>
-        </div>
-      <div class="col-xs-10"></div>
-        <div class="tab-content"></div>
-        <p>База Знаний IP ATC Krasterisk</p>
-            <div id="accordion">
-          <a data-toggle="collapse" data-parent="#accordion" href="#microsip">microsip</a>
-        </div>
-
-          <div class="tab-pane fade active in" id="ipdevices\"></div>
-        <div id="accordion">
-          <a data-toggle="collapse" data-parent="#accordion" href="#gxp1610">Grandstraam gxp1610</a>
-        </div>
-        <div id="gxp1610" class="panel-collapse collapse">
-          <b>Grandstream gxp1610
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.</b>
-        </div>
-      </div>
-      </div>
-          <div class="tab-pane fade in" id="docs">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <div class="container-fluid">
+      <div class="jumbotron_krx">
+        <div class="row">
+          <div class="col-xs-2">
+            <ul id="dashboardPill" class="nav nav-pills nav-stacked">
+              <li><a href="#softphones" data-toggle="pill">Настройка софтфонов</a></li>
+              <li><a href="#ipdevices" data-toggle="pill">Настройка аппаратов</a></li>
+              <li><a href="#outbound" data-toggle="pill">Исходящий call-центр</a></li>
+              <li><a href="#voice" data-toggle="pill">Голосовое управление</a></li>
+              <li><a href="#api" data-toggle="pill">API</a></li>
+            </ul>
           </div>
+          <div class="col-xs-10">
+            <div class="tab-content">
+              <p>База знаний IP ATC Krasterisk</p>
+              <div class="tab-pane fade active in" id="softphones">
+                <div id="accordion">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#microsip">microSIP</a>
+                </div>
+                <div id="microsip" class="panel-collapse collapse">
+                  <p>Скачиваем MicroSIP c официального сайта и устанавливаем.</p>
+                  <p>После установки открываете MicroSIP</p>
+                  <p>Нажмите на стрелку, выделенную на снимке.</p>
+                  <img src="./img/microsip/microsip_1.png" alt="MicroSIP" width="" />
+                  <p>В появившемся меню нажмите «Добавить аккаунт...»</p>
+                  <img src="./img/microsip/microsip_2.png" alt="MicroSIP" width="" />
+                  <p>В поля «Название аккаунта», «Имя пользователя», «Логин» и «Ваше имя»вводим Ваш внутренний номер в АТС.<br />
+                    В поля «SIP сервер», «SIP прокси», «Домен» вводим IP адрес сервера телефонии. Нажимаем «Сохранить».</p>
+                    <img src="./img/microsip/Screenshot_4 (2).png" alt="MicroSIP" width="" />
+                    <p>Если введены правильные данные, то внизу программы вы увидите зелёную трубку с надписью «Онлайн»<br />
+                      и номер с которым вы зарегестрировались на АТС</p>
+                      <img src="./img/microsip/microsip_5 (2).png" alt="MicroSIP" width="" />
+                      <p>Если это не так, проверьте свои действия по пунктам выше.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade active in" id="ipdevices">
+              <div id="accordion">
+              <a data-toggle="collapse" data-parent="#accordion" href="#gxp1610">Grandstraam gxp1610</a>
+              </div>
+              <div id="gxp1610" class="panel-collapse collapse"><b>Grandstream gxp1610</b>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade in" id="docs"></div>
+        </div>
       </div>
-
-
-    <p>Скачиваем MicroSIP c официального сайта и устанавливаем.</p>
-    <p>После установки открываете MicroSIP</p>
-    <p>Нажмите на стрелку, выделенную на снимке.</p>
-    <img src="./img/microsip/microsip_1.png" alt="MicroSIP" width="" />
-    <p>В появившемся меню нажмите «Добавить аккаунт...»</p>
-    <img src="./img/microsip/microsip_2.png" alt="MicroSIP" width="" />
-    <p>
-      В поля «Название аккаунта», «Имя пользователя», «Логин» и «Ваше имя»
-      вводим Ваш внутренний номер в АТС.<br />
-      В поля «SIP сервер», «SIP прокси», «Домен» вводим IP адрес сервера
-      телефонии. Нажимаем «Сохранить».
-    </p>
-    <img src="./img/microsip/Screenshot_4 (2).png" alt="MicroSIP" width="" />
-    <p>
-      Если введены правильные данные, то внизу программы вы увидите зелёную
-      трубку с надписью «Онлайн»<br />
-      и номер с которым вы зарегестрировались на АТС
-    </p>
-    <img src="./img/microsip/microsip_5 (2).png" alt="MicroSIP" width="" />
-    <p>Если это не так, проверьте свои действия по пунктам выше.</p>
+    </div>
   </body>
 </html>
