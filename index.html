@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuals</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Secondary content -->
+        <div class="col-lg-2 navbar-container bg-light" data-target="#navbar">
+          <div class="navbar" id="accordion">
+<!-- Настройка Софтфонов -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse1">Настройка Софтфонов</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#microsip" data-toggle="tab">MicroSIP </a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#x-lite" data-toggle="tab">X-lite</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#bria" data-toggle="tab">Bria</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+<!-- Настройка Телефонов -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse2"
+                  >
+                    Настройка Телефонов</a
+                  >
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">MicroSIP </a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">X-lite</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Bria</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+<!-- Исходящий call-центр -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse3"
+                  >
+                    Исходящий call-центр
+                    </a
+                  >
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">MicroSIP </a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">X-lite</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Bria</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Голосовое управление -->
+                        <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a
+                    data-toggle="collapse"
+                    data-parent="#accordion"
+                    href="#collapse4"
+                  >
+                    Голосовое управление
+                    </a
+                  >
+                </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">MicroSIP </a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">X-lite</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Bria</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Main content  -->
+        <main class="col-xs-10">
+          <div class="tab-content">
+            <!-- !MicroSIP -->
+            <div id="microsip" class="tab-pane fade">
+              <ul class="nav nav-tabs">
+                <li class="active">
+                  <a href="#first-tab-content" data-toggle="tab">Установка</a>
+                </li>
+                <li>
+                  <a href="#second-tab-content" data-toggle="tab">Настройка</a>
+                </li>
+                <li role="presentation" class="dropdown">
+                  <a href="#" class="third-toggle" data-toggle="dropdown">
+                    Не исправность <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#third-tab-content" data-toggle="tab"
+                        >Нет сервера</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#fourth-tab-content" data-toggle="tab"
+                        >Четвертая ссылка</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="first-tab-content" class="tab-pane fade in active">
+                  <h3>Установка</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                <div id="second-tab-content" class="tab-pane fade">
+                    <h3>Настройка MicroSIP</h3>
+                    <p>Скачиваем MicroSIP c официального сайта и устанавливаем.</p>
+                    <p>После установки открываете MicroSIP</p>
+                    <p>Нажмите на стрелку, выделенную на снимке.</p>
+                    <img src="./img/microsip/microsip_1.png" alt="MicroSIP" width="200"/>
+                    <p>В появившемся меню нажмите «Добавить аккаунт...»</p>
+                    <img src="./img/microsip/microsip_2.png" alt="MicroSIP" width=""/>
+                    <p>В поля «Название аккаунта», «Имя пользователя», «Логин» и «Ваше имя»вводим Ваш внутренний номер в АТС.<br />
+                      В поля «SIP сервер», «SIP прокси», «Домен» вводим IP адрес сервера телефонии. Нажимаем «Сохранить».</p>
+                      <img src="./img/microsip/microsip_3.png" alt="MicroSIP" width="" />
+                      <p>Если введены правильные данные, то внизу программы вы увидите зелёную трубку с надписью «Онлайн»<br />
+                        и номер с которым вы зарегестрировались на АТС</p>
+                        <img src="./img/microsip/microsip_4.png" alt="MicroSIP" width="" />
+                        <p>Если это не так, проверьте свои действия по пунктам выше.</p>
+                </div>
+                <div id="third-tab-content" class="tab-pane fade">
+                  <h3>Нет сервера</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                <div id="fourth-tab-content" class="tab-pane fade">
+                  <h3>Четвертый заголовок</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <!-- Закрытия div microsip -->
+            </div>
+            <!-- !X-lite -->
+            <div id="x-lite" class="tab-pane fade">
+              <ul class="nav nav-tabs">
+                <li class="active">
+                  <a href="#first-tab-content" data-toggle="tab">Установка</a>
+                </li>
+                <li>
+                  <a href="#second-tab-content" data-toggle="tab">Настройка</a>
+                </li>
+                <li role="presentation" class="dropdown">
+                  <a href="#" class="third-toggle" data-toggle="dropdown">
+                    Не исправность <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#third-tab-content" data-toggle="tab"
+                        >Нет сервера</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#fourth-tab-content" data-toggle="tab"
+                        >Четвертая ссылка</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="first-tab-content" class="tab-pane fade in active">
+                  <h3>Установка</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                <div id="second-tab-content" class="tab-pane fade">
+                  <h3>Настройка</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                <div id="third-tab-content" class="tab-pane fade">
+                  <h3>Нет сервера</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                <div id="fourth-tab-content" class="tab-pane fade">
+                  <h3>Четвертый заголовок</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+              <!-- Закрытия div x-lite -->
+            </div>
+                        <!-- !Bria -->
+            <div id="bria" class="tab-pane fade">
+            <ul class="nav nav-tabs">
+    <li><a href="#first-tab-content" data-toggle="tab">Первая ссылка</a></li>
+    <li class="active"><a href="#second-tab-content" data-toggle="tab">Вторая ссылка</a></li>
+    <li role="presentation" class="dropdown">
+        <a href="#" class="third-toggle" data-toggle="dropdown">
+            Выпадающее меню <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#third-tab-content" data-toggle="tab">Третья ссылка</a></li>
+            <li><a href="#fourth-tab-content" data-toggle="tab">Четвертая ссылка</a></li>
+        </ul>
+    </li>
+    <li><a href="#fifth-tab-content" data-toggle="tab">Пятая ссылка</a></li>
+</ul>
+
+<div class="tab-content">
+    <div id="first-tab-content" class="tab-pane fade">
+        <h3>Первый заголовок</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+    <div id="second-tab-content" class="tab-pane fade in active">
+        <h3>Второй заголовок</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+    <div id="third-tab-content" class="tab-pane fade">
+        <h3>Третий заголовок</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+    <div id="fourth-tab-content" class="tab-pane fade"">
+        <h3>Четвертый заголовок</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+    <div id="fifth-tab-content" class="tab-pane fade">
+        <h3>Пятый заголовок</h3>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+</div>
+<!-- Закрытия div bria -->
+</div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
