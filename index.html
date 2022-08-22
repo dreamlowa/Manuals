@@ -13,10 +13,10 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <!-- Secondary content -->
+<!-- Secondary content -->
         <div class="col-lg-2 navbar-container bg-light" data-target="#navbar">
           <div class="navbar" id="accordion">
-<!-- Настройка Софтфонов -->
+<!-- Accardion Настройка Софтфонов -->
             <div class="panel panel-default" data-toggle="collapse">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -31,7 +31,7 @@
                     <a href="#microsip" data-toggle="tab">MicroSIP </a>
                   </li>
                   <li class="list-group-item panel-title">
-                    <a href="#x-lite" data-toggle="tab">X-lite</a>
+                    <a href="#3cxphone" data-toggle="tab">3CX Phone</a>
                   </li>
                   <li class="list-group-item panel-title">
                     <a href="#bria" data-toggle="tab">Bria</a>
@@ -39,7 +39,7 @@
                 </ul>
               </div>
             </div>
-<!-- Настройка Телефонов -->
+<!-- Accardion Настройка Телефонов -->
             <div class="panel panel-default" data-toggle="collapse">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -48,7 +48,7 @@
                     data-parent="#accordion"
                     href="#collapse2"
                   >
-                    Настройка Телефонов</a
+                    Настройка Телефонов </a
                   >
                 </h4>
               </div>
@@ -66,7 +66,7 @@
                 </ul>
               </div>
             </div>
-<!-- Исходящий call-центр -->
+<!-- Accardion Исходящий call-центр -->
             <div class="panel panel-default" data-toggle="collapse">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -94,8 +94,8 @@
                 </ul>
               </div>
             </div>
-<!-- Голосовое управление -->
-                        <div class="panel panel-default" data-toggle="collapse">
+<!-- Accardion Голосовое управление -->
+            <div class="panel panel-default" data-toggle="collapse">
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <a
@@ -124,7 +124,6 @@
             </div>
           </div>
         </div>
-
 <!-- Main-content  -->
         <main class="col-xs-10">
           <div class="tab-content">
@@ -144,13 +143,23 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="#not_pass" data-toggle="tab"
+                      <a href="#not_pass_microsip" data-toggle="tab"
                         >Неверный пароль</a
                       >
                     </li>
                     <li>
-                      <a href="#fourth-tab-content" data-toggle="tab"
-                        >Четвертая ссылка</a
+                      <a href="#not_server_microsip" data-toggle="tab"
+                        >Сервер не найден</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#no_name_microsip" data-toggle="tab"
+                        >Не найден</a
+                      >
+                    </li>
+                    <li class="disabled">
+                      <a href="timeout_microsip#" data-toggle="tab"
+                        >Таймаут</a
                       >
                     </li>
                   </ul>
@@ -158,6 +167,7 @@
               </ul>
 <!-- Main-content-MicroSIP  -->
               <div class="tab-content">
+<!--  Install-content-MicroSIP  -->
                 <div id="install_microsip" class="tab-pane fade in active">
                   <h3>Установка софтфона "MicroSIP"</h3>                  
                   <h4><a href="https://www.microsip.org/" alt="MicroSIP"> Официальный сайт</a> разработчика софтфона "MicroSIP"</h4>
@@ -165,28 +175,28 @@
                   <li>Скачиваем софтфон <a href="https://www.microsip.org/download/MicroSIP-Lite-3.21.2.exe" alt="MicroSIP">"MicroSIP"</a> с официального сайта</li>
                   <p class="divider"></p>
                   <li>Запустите скаченный фаил установки программы "MicroSIP"</li>
-                  <img src="./img/microsip/install_microsip/install_language.png" alt="install_language" width="200"/>
-                  <li>Выберети язык и нажмите "OK"</li>
-                  <img src="./img/microsip/install_microsip/install_hello.png" alt="install_hello" width="300">
+                  <img src="./img/microsip/install_microsip/install_language.png" alt="install_language" width="250"/>
+                  <li>Выберете язык и нажмите "OK"</li>
+                  <img src="./img/microsip/install_microsip/install_hello.png" alt="install_hello" width="400">
                   <li>Мастер установки приветствует и просит нажать "Далее"</li>
-                  <img src="./img/microsip/install_microsip/install_license.png" alt="install_license" width="300">
-                  <li>Принимаем условия лецензонного соглашения нажав "Принимаю"</li>
-                  <img src="./img/microsip/install_microsip/install_components.png" alt="install_components" width="300">
-                  <li>При выборе компанентов при установке оставляем все по умолчанию и нажимаем "Далее"</li>
-                  <img src="./img/microsip/install_microsip/Install_path.png" alt="Install_path" width="300">
+                  <img src="./img/microsip/install_microsip/install_license.png" alt="install_license" width="400">
+                  <li>Принимаем условия лицензионного соглашения нажав "Принимаю"</li>
+                  <img src="./img/microsip/install_microsip/install_components.png" alt="install_components" width="400">
+                  <li>При выборе компонентов при установке оставляем все по умолчанию и нажимаем "Далее"</li>
+                  <img src="./img/microsip/install_microsip/Install_path.png" alt="Install_path" width="400">
                   <li>Путь куда будет установлена программа "MicroSIP" рекомендуем оставить по умолчанию и нажать "Далее"</li>
-                  <img src="./img/microsip/install_microsip/Install_start_menu.png" alt="Install_start_menu" width="300">
-                  <li>Выбор папки в меню "Пуск" оставляем по умолчаниюи нажимаем "Далее"</li>
-                  <img src="./img/microsip/install_microsip/install_inst.png" alt="install_inst" width="300">
+                  <img src="./img/microsip/install_microsip/Install_start_menu.png" alt="Install_start_menu" width="400">
+                  <li>Выбор папки в меню "Пуск" оставляем по умолчанию и нажимаем "Далее"</li>
+                  <img src="./img/microsip/install_microsip/install_inst.png" alt="install_inst" width="400">
                   <li>Ожидаем установку программы "MicroSIp"</li>
-                  <img src="./img/microsip/install_microsip/install_completion.png" alt="install_completion" width="300">
-                  <li>После завршения установки нажимаем "Готово"и запускаем программу "MicroSIP"</li> 
+                  <img src="./img/microsip/install_microsip/install_completion.png" alt="install_completion" width="400">
+                  <li>После завершения установки нажимаем "Готово"и запускаем программу "MicroSIP"</li> 
                   <p class="divider"></p>
-                </ol>
-                
+                </ol>                
               </div>
+<!--  Setting-content-MicroSIP  -->
                 <div id="setting_microsip" class="tab-pane fade">
-                    <h3>Настройка софтфона "MicroSIP"</h3>
+                    <h3>Настройка аккаунта "MicroSIP"</h3>
                     <p class="divider"></p>
                     <h4>После установки откройте программу "MicroSIP"</h4>
                     <ol>
@@ -215,37 +225,68 @@
                     <li>Ваш "MicroSIP" готов к работе</li>
                   </ol>
                 </div>
-                <div id="not_pass" class="tab-pane fade">
+<!--  Malfunction-content-MicroSIP  -->
+                <div id="not_pass_microsip" class="tab-pane fade">
                   <h3>Неверный пароль в "MicroSIP"</h3>
                   <p class="divider"> </p>
                   <ol>
                     <img src="./img/microsip/malfunction_microsip/not_pass.png" alt="not_pass" width="400">
                     <li>Проверьте правильность пароля (нет, серьезно)</li>
-                    <li>Если после проверки правильности пароля ошибка осталось, обратитесь в тех.поддержку <a href="mailto:support@krasterisk.ru">support@krasterisk.ru</a></li>
-                    <p>При обращение в тех. поддержку не забудьте написать организацию от каторой обращаетесь или номер лицевого счета и короткий номер (экстеншен) который хотите зарегестрировать<br>
-                       Далее - подробно опишите ситуацию при каких обстоятельствах появилась данная ошибка</p>
+                    <li>Если, после проверки правильности пароля ошибка осталось, обратитесь в тех.поддержку <a href="mailto:support@krasterisk.ru">support@krasterisk.ru</a></li>
+                    <p class="divider"> </p>
+                    <p>При обращение в тех. поддержку не забудьте написать организацию от которой вы обращаетесь или номер лицевого счета и короткий номер (экстеншен) который хотите зарегистрировать<br>
+                    Далее - подробно опишите ситуацию при каких обстоятельствах появилась данная ошибка</p>
                   </ol>
                 </div>
-                <div id="fourth-tab-content" class="tab-pane fade">
-                  <h3>Четвертый заголовок</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
+                <div id="not_server_microsip" class="tab-pane fade">
+                  <h3>Сервер не найден в "MicroSIP"</h3>
+                  <p class="divider"> </p>
+                  <ol>
+                    <img src="./img/microsip/malfunction_microsip/not_server.png" alt="not_server" width="400">
+                    <li>Проверьте правильность (ip/domaine) адреса сервера в пункте "SIP сервер" (и опять я серьезно)</li>
+                    <li>В нашем примере на скриншоте выше, абонент не полностью указал (domaine) адрес сервера забыв указать "ru"</li>
+                    <li>Если, после проверки правильности (ip/domaine) адреса сервера ошибка осталось, обратитесь в тех.поддержку <a href="mailto:support@krasterisk.ru">support@krasterisk.ru</a></li>
+                    <p class="divider"> </p>
+                    <p>При обращение в тех. поддержку не забудьте написать организацию от которой вы обращаетесь или номер лицевого счета и короткий номер (экстеншен) который хотите зарегистрировать<br>
+                    Далее - подробно опишите ситуацию при каких обстоятельствах появилась данная ошибка</p>
+                  </ol>
                 </div>
-              </div>
-              <!-- Закрытия div microsip -->
-            </div>
-            <!-- !X-lite -->
-            <div id="x-lite" class="tab-pane fade">
+                <div id="no_name_microsip" class="tab-pane fade">
+                  <h3>Ошибка "Не найден" в "MicroSIP"</h3>
+                  <p class="divider"> </p>
+                  <ol>
+                    <img src="./img/microsip/malfunction_microsip/no_name.png" alt="no_name" width="400">
+                    <li>Проверьте правильность короткого номера в пункте "Имя пользователя" (и опять я серьезно)</li>
+                    <li>В нашем примере на скриншоте выше, абонент не полностью указал короткий номер забыв указать "0"</li>
+                    <li>Если, после проверки правильности короткого номера ошибка осталось, обратитесь в тех.поддержку <a href="mailto:support@krasterisk.ru">support@krasterisk.ru</a></li>
+                    <p class="divider"></p>
+                    <p>При обращение в тех. поддержку не забудьте написать организацию от которой вы обращаетесь или номер лицевого счета и короткий номер (экстеншен) который хотите зарегистрировать<br>
+                    Далее - подробно опишите ситуацию при каких обстоятельствах появилась данная ошибка</p>
+                  </ol>
+                </div>
+                <div id="timeout_microsip" class="tab-pane fade">
+                  <h3>Таймаут в "MicroSIP"</h3>
+                  <p class="divider"></p>
+                  <ol>
+                    <img src="./img/microsip/malfunction_microsip/timeout.png" alt="timeout" width="400">
+                    <li>Проверьте правильность (ip/domaine) адреса сервера в пункте "SIP сервер" (и опять я серьезно)</li>
+                    <li>В нашем примере на скриншоте выше, абонент не полностью указал (domaine) адрес сервера забыв указать "ru"</li>
+                    <li>Если, после проверки правильности (ip/domaine) адреса сервера ошибка осталось, обратитесь в тех.поддержку <a href="mailto:support@krasterisk.ru">support@krasterisk.ru</a></li>
+                    <p>При обращение в тех. поддержку не забудьте написать организацию от которой обращаетесь или номер лицевого счета и короткий номер (экстеншен) который хотите зарегистрировать<br>
+                    Далее - подробно опишите ситуацию при каких обстоятельствах появилась данная ошибка</p>
+                  </ol>
+                </div>
+              </div> <!-- close main-content-MicroSIP -->
+            </div> <!-- close main-menu-MicroSIP -->
+            <!-- !3CX Phone -->
+<!-- Main-menu-3CX Phone  -->
+            <div id="3cxphone" class="tab-pane fade">
               <ul class="nav nav-tabs">
                 <li class="active">
-                  <a href="#first-content" data-toggle="tab">Установка</a>
+                  <a href="#install_3cxphone" data-toggle="tab">Установка</a>
                 </li>
                 <li>
-                  <a href="#second-content" data-toggle="tab">Настройка</a>
+                  <a href="#setting_3cxphone" data-toggle="tab">Настройка</a>
                 </li>
                 <li role="presentation" class="dropdown">
                   <a href="#" class="third-toggle" data-toggle="dropdown">
@@ -253,59 +294,94 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="#third-content" data-toggle="tab"
-                        >Нет сервера</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#fourth-content" data-toggle="tab"
-                        >Четвертая ссылка</a
+                      <a href="#not_connected_3cxphone" data-toggle="tab"
+                        >Not connected</a
                       >
                     </li>
                   </ul>
                 </li>
               </ul>
-
+<!-- Main-content-3CX Phone  -->
               <div class="tab-content">
-                <div id="first-content" class="tab-pane fade in active">
-                  <h3>Установка</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-                <div id="second-content" class="tab-pane fade">
-                  <h3>Настройка</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-                <div id="third-content" class="tab-pane fade">
-                  <h3>Нет сервера</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-                <div id="fourth-content" class="tab-pane fade">
-                  <h3>Четвертый заголовок</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
+<!-- Install-content-3CX Phone  -->
+                <div id="install_3cxphone" class="tab-pane fade in active">
+                  <h3>Установка софтфона "3CX Phone"</h3>                  
+                  <h4><a href="https://www.3cx.ru/" alt="3CX Phone"> Официальный сайт</a> разработчика софтфона "3CX Phone"</h4>
+                  <ol>
+                  <li>Скачиваем софтфон <a href="https://downloads.3cx.com/downloads/3CXPhone6.msi" alt="3CX Phone">"3CX Phone"</a> с официального сайта</li>
+                  <p class="divider"></p>
+                  <li>Запустите скаченный фаил установки программы "3CX Phone"</li>
+                  <img src="./img/3cxphone/install_3cxphone/install_welcome.png" alt="install_welcome" width="400">
+                  <li>Мастер установки приветствует и просит нажать "Next"</li>
+                  <img src="./img/3cxphone/install_3cxphone/install_license.png" alt="install_license" width="400">
+                  <li>Примите лицензионное соглашение переставив  "метку" на  "I accept..." и нажмите "Next"</li>
+                  <img src="./img/3cxphone/install_3cxphone/Install_path.png" alt="Install_path" width="400">
+                  <li>Путь куда будет установлена программа "3CX Phone" рекомендуем оставить по умолчанию и нажать "Next"</li>
+                  <img src="./img/3cxphone/install_3cxphone/Install_ready.png" alt="Install_ready" width="400">
+                  <li>Далее нажимаем "Install"</li>
+                  <img src="./img/3cxphone/install_3cxphone/install_status.png" alt="install_inst" width="400">
+                  <li>Ожидаем установку программы "3CX Phone"</li>
+                  <img src="./img/3cxphone/install_3cxphone/install_finish.png" alt="install_finish" width="400">
+                  <li>После завершения установки нажимаем "Finish" и запускаем программу "3CX Phone"</li> 
+                  <p class="divider"></p>
+                </ol>                
               </div>
-              <!-- Закрытия div x-lite -->
-            </div>
+<!-- Setting-content-3CX Phone  -->
+                <div id="setting_3cxphone" class="tab-pane fade">
+                    <h3>Настройка аккаунта "3CX Phone"</h3>
+                    <p class="divider"></p>
+                    <h4>После установки откройте программу "3CX Phone"</h4>
+                    <ol>
+                    <img src="./img/3cxphone/setting_3cxphone/setting_start.png" alt="setting_start" width="300"/>
+                    <li>После запуска в появившемся окне необходимо кликну "Создать Профиль" (Create Profile)</li>                    
+                    <img src="./img/3cxphone/setting_3cxphone/setting_add.png" alt="setting_add" width="400"/>
+                    <li>После открытия меню нажмите пункт "New"</li>
+                    <img src="./img/3cxphone/setting_3cxphone/setting_empty.png" alt="setting_empty" width="300"/>
+                    <li>
+                      <p>Описание основных пунктов настроек аккаунта</p>
+                      <ul>
+                        <li>"Account name" - Указываем название аккаунта "110" (их может быть несколько в "3CX Phone")</li>
+                        <li>"Caller ID" - Имя, отображаемое в софтфоне (в карточке при звонке) </li>
+                        <li>"Extension*" - Пользователь на АТС, как правило, короткий номер который вы регистрируете "110"</li>
+                        <li>"ID" - Номер вашего короткого номера "110" </li>
+                        <li>"Password*" - Пароль от вашего короткого номера" </li>
+                        <li>"I am in the office - local IP" – локальный IP-адрес АТС (для тех, кто работает в офисе)</li>
+                        <li>"I am out of the office – external IP" – публичный IP-адрес АТС (для тех, кто работает удаленно)</li>
+                        <li>Пишем IP-адрес АТС, в примере – "pbx.krasterisk.ru" </li>
+                        <p></p>
+                        <p>Поля отмеченные * обязательны к заполнению, на скриншоте ниже виден пример настройки:</p>
+                      </ul>
+                    </li>
+                    <img src="./img/3cxphone/setting_3cxphone/setting_sample.png" alt="setting_sample" width="300"/>
+                    <li>После заполнения всех полей необходимо нажать на кнопку "OK", и, если все было настроено корректно, то статус учетной записи изменился на «On hook».
+                    </li>
+                    <img src="./img/3cxphone/setting_3cxphone/setting_finish.png" alt="setting_finish" width="200"/>
+                    <li>Ваш "3CX Phone" готов к работе</li>
+                  </ol>
+                </div>
+<!--  Malfunction-content-3CX Phone  -->
+                <div id="not_connected_3cxphone" class="tab-pane fade">
+                  <h3>Not connected в "3CX Phone"</h3>
+                  <h4>У вас отображается "Not connected" (Нет соединения) с сервером АТC?</h4>
+                  <p class="divider"> </p>
+                  <ol>
+                    <img src="./img/3cxphone/malfunction_3cxphone/not_connected.png" alt="not_connected" width="200">
+                    <li>Если статус аккаунта "Not connected" - проверьте интернет-подключение или проверьте настройки профиля, как описано ниже</li>
+                    <img src="./img/3cxphone/malfunction_3cxphone/not_connected_user.png" alt="not_connected_user" width="200">
+                    <li>Нажимаем на "Имя аккаунта" в нашем примере - это "110"</li>
+                    <img src="./img/3cxphone/malfunction_3cxphone/not_connected_edit.png" alt="not_connected_edit" width="400">
+                    <li>Выбираем имя аккаунта который хотим проверить параметры соединения и нажимаем "Edit"</li>
+                    <img src="./img/3cxphone/malfunction_3cxphone/not_connected_sample.png" alt="not_connected_sample" width="400">
+                    <li>Проверьте настройки профиля, в примере абонент забыл в поле "ID" поставить 0</li>
+                    <img src="./img/3cxphone/malfunction_3cxphone/not_connected_mal.png" alt="not_connected_mal" width="400">
+                    <li>Если, после проверки правильности пароля ошибка осталось, обратитесь в тех.поддержку <a href="mailto:support@krasterisk.ru">support@krasterisk.ru</a></li>
+                    <p class="divider"> </p>
+                    <p>При обращение в тех. поддержку не забудьте написать организацию от которой вы обращаетесь или номер лицевого счета и короткий номер (экстеншен) который хотите зарегистрировать<br>
+                    Далее - подробно опишите ситуацию при каких обстоятельствах появилась данная ошибка</p>
+                  </ol>
+                </div>                
+              </div> <!-- close main-content-3CX Phone -->
+            </div> <!-- close main-menu-3CX Phone -->
                         <!-- !Bria -->
             <div id="bria" class="tab-pane fade">
             <ul class="nav nav-tabs">
@@ -326,43 +402,23 @@
 <div class="tab-content">
     <div id="first-tab-content" class="tab-pane fade">
         <h3>Первый заголовок</h3>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <p></p>
     </div>
     <div id="second-tab-content" class="tab-pane fade in active">
         <h3>Второй заголовок</h3>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <p></p>
     </div>
     <div id="third-tab-content" class="tab-pane fade">
         <h3>Третий заголовок</h3>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <p></p>
     </div>
-    <div id="fourth-tab-content" class="tab-pane fade"">
+    <div id="fourth-tab-content" class="tab-pane fade">
         <h3>Четвертый заголовок</h3>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <p></p>
     </div>
     <div id="fifth-tab-content" class="tab-pane fade">
         <h3>Пятый заголовок</h3>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <p></p>
     </div>
 </div>
 <!-- Закрытия div bria -->
