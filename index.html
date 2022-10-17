@@ -13,19 +13,276 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <!-- ?Secondary content -->
+        <!-- !Secondary content -->
         <div class="col-lg-2 navbar-container bg-light" data-target="#navbar">
           <div class="navbar" id="accordion">
+            <!-- ?Accardion Информация о системе -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse">
+                    Информация о системе
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#performance" data-toggle="tab">Производительность и ...</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#atc" data-toggle="tab">АТС</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">О системе</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ?Accardion Настройки IP ATC -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                    Настройки IP ATC
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Абоненты</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Транки</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Шаблоны настроек</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Шаблоны аппаратов</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Входящие правила</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Исходящие правила</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Разрешения</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Исходящий CallerID</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">IVR</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Очереди</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Группы</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Группы ключевых слов</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Запись фраз</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Музыка на удержании</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Группа времени</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Черный список</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ?Accardion Входящий call-центр -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                    Входящий Call-центр
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Панель супервизора</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Панель оператора</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ?Accardion Исходящий call-центр -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                    Исходящий Call-центр
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Компании</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Монитор автообзвона</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Типы данных клиента</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Результаты звонка</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Общий</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Сводный</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ?Accardion Отчёты IP ATC -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                    Отчёты IP ATC
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse4" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Общий</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Графики</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">По очередям</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Сводная</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">По операторам</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Графики</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Пропущенные</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ?Accardion Телеконференции -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                    Телеконференции
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse5" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Настройка комнаты </a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Комната телеконференции</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ?Accardion Справочник -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                    Справочник
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse6" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Добавить новый контакт</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Импорт контактов</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ?Системы -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Системы</a>
+                </h4>
+              </div>
+              <div id="collapse7" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Пользователи</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Интерфейсы пользователей</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Список доступа</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Обслуживание</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Резервное копирование</a>
+                  </li>
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">Конфигурация сети и служб сервера</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ?Accardion API -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse8"> API </a>
+                </h4>
+              </div>
+              <div id="collapse8" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#" data-toggle="tab">API</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <!-- ?Accardion Настройка Софтфонов -->
             <div class="panel panel-default" data-toggle="collapse">
               <div class="panel-heading">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse9"
                     >Настройка Софтфонов</a
                   >
                 </h4>
               </div>
-              <div id="collapse1" class="panel-collapse collapse">
+              <div id="collapse9" class="panel-collapse collapse">
                 <ul class="list-group">
                   <li class="list-group-item panel-title">
                     <a href="#microsip" data-toggle="tab">MicroSIP </a>
@@ -43,12 +300,12 @@
             <div class="panel panel-default" data-toggle="collapse">
               <div class="panel-heading">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
                     Настройка IP Телефонов
                   </a>
                 </h4>
               </div>
-              <div id="collapse2" class="panel-collapse collapse">
+              <div id="collapse10" class="panel-collapse collapse">
                 <div class="navbar" id="accordion1">
                   <!-- ?Проводные -->
                   <div class="panel panel-default" data-toggle="collapse">
@@ -63,12 +320,6 @@
                       <ul class="list-group">
                         <li class="list-group-item panel-title">
                           <a href="#gs_gpx16xx" data-toggle="tab">Grandstream GXP16XX</a>
-                        </li>
-                        <li class="list-group-item panel-title">
-                          <a href="#" data-toggle="tab">3CX Phone</a>
-                        </li>
-                        <li class="list-group-item panel-title">
-                          <a href="#" data-toggle="tab">Bria</a>
                         </li>
                       </ul>
                     </div>
@@ -85,10 +336,7 @@
                     <div id="pod_collapse1" class="panel-collapse collapse">
                       <ul class="list-group">
                         <li class="list-group-item panel-title">
-                          <a href="#GS_DP750" data-toggle="tab">Grandstream DP750/DP720</a>
-                        </li>
-                        <li class="list-group-item panel-title">
-                          <a href="#" data-toggle="tab">Bria</a>
+                          <a href="#gs_dp750" data-toggle="tab">Grandstream DP750/DP720</a>
                         </li>
                       </ul>
                     </div>
@@ -96,59 +344,29 @@
                 </div>
               </div>
             </div>
-            <!-- ?Accardion Исходящий call-центр -->
-            <div class="panel panel-default" data-toggle="collapse">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                    Исходящий call-центр
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse3" class="panel-collapse collapse">
-                <ul class="list-group nav-tab">
-                  <li class="list-group-item panel-title">
-                    <a href="#" data-toggle="tab">MicroSIP </a>
-                  </li>
-                  <li class="list-group-item panel-title">
-                    <a href="#" data-toggle="tab">X-lite</a>
-                  </li>
-                  <li class="list-group-item panel-title">
-                    <a href="#" data-toggle="tab">Bria</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- ?Accardion Голосовое управление -->
-            <div class="panel panel-default" data-toggle="collapse">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                    Голосовое управление
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse4" class="panel-collapse collapse">
-                <ul class="list-group nav-tab">
-                  <li class="list-group-item panel-title">
-                    <a href="#" data-toggle="tab">MicroSIP </a>
-                  </li>
-                  <li class="list-group-item panel-title">
-                    <a href="#" data-toggle="tab">X-lite</a>
-                  </li>
-                  <li class="list-group-item panel-title">
-                    <a href="#" data-toggle="tab">Bria</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
-        <!-- ?Main-content  -->
+
+        <!-- !Main-content -->
         <main class="col-xs-10">
           <div class="tab-content">
-            <!-- !MicroSIP -->
-            <!-- Main-menu-MicroSIP  -->
+            <!-- ?Accardion Настройки IP ATC -->
+            <!-- todo Производительность и нагрузка -->
+            <div id="performance" class="tab-pane fade">
+              <h3>Производительность и нагрузка</h3>
+              <p></p>
+              <img src="" alt="performance" width="600" />
+              <p>performance</p>
+            </div>
+            <!-- todo АТС -->
+            <div id="atc" class="tab-pane fade">
+              <h3>ATC</h3>
+              <p></p>
+              <img src="" alt="atc" width="600" />
+              <p>atc</p>
+            </div>
+            <!-- ?Настройка Софтфонов -->
+            <!-- todo MicroSIP -->
             <div id="microsip" class="tab-pane fade">
               <ul class="nav nav-tabs">
                 <li class="active">
@@ -464,10 +682,7 @@
                 </div>
               </div>
             </div>
-            <!-- ?close main-content-MicroSIP -->
-
-            <!-- !3CX Phone -->
-            <!-- ?Main-menu-3CX Phone  -->
+            <!-- todo 3CX Phone -->
             <div id="3cxphone" class="tab-pane fade">
               <ul class="nav nav-tabs">
                 <li class="active">
@@ -690,8 +905,7 @@
               </div>
               <!-- ?close main-content-3CX Phone -->
             </div>
-            <!-- ?close main-menu-3CX Phone -->
-            <!-- !Bria -->
+            <!-- todo Bria -->
             <div id="bria" class="tab-pane fade">
               <ul class="nav nav-tabs">
                 <li>
@@ -742,11 +956,10 @@
                 </div>
               </div>
             </div>
-            <!-- !Закрытия div bria -->
 
             <!-- ?Настройка IP Телефонов -->
             <!-- ?Проводные IP Телефонов -->
-            <!-- !GS GXP16XX -->
+            <!-- todo GS GXP16XX -->
             <div id="gs_gpx16xx" class="tab-pane fade">
               <ul class="nav nav-tabs">
                 <li class="active">
@@ -777,7 +990,6 @@
                     </li>
                   </ul>
                 </li>
-
                 <li role="presentation" class="dropdown">
                   <a href="#" class="third-toggle" data-toggle="dropdown">
                     Неисправность
@@ -792,7 +1004,6 @@
                     </li>
                   </ul>
                 </li>
-
                 <li role="presentation" class="dropdown">
                   <a href="#" class="third-toggle" data-toggle="dropdown">
                     Инструкции <span class="caret"></span>
@@ -888,7 +1099,6 @@
                         <li>Пароль: указываете пароль из личного кабинета</li>
                       </ul>
                     </li>
-
                     <p></p>
                     <p>
                       После того как заполнили все необходимые поля нажимаем "сохранить и
@@ -973,7 +1183,6 @@
                     XP1610/1615/1620/1625/1628/1630
                   </h3>
                   <p></p>
-
                   <img
                     src="./img/gxp16xx/instruction/instruction_gxp16xx.jpg"
                     alt="instruction_gxp16xx"
@@ -986,11 +1195,9 @@
                 </div>
               </div>
             </div>
-            <!-- !close div GS GXP16XX -->
-
             <!-- ?Беспроводные IP Телефонов -->
-            <!-- !Main-content-GS_DP750  -->
-            <div id="GS_DP750" class="tab-pane fade">
+            <!-- todo GS DP750/720 -->
+            <div id="gs_dp750" class="tab-pane fade">
               <ul class="nav nav-tabs">
                 <li class="active">
                   <a href="#connection-dp750" data-toggle="tab">Подключение</a>
@@ -1066,76 +1273,246 @@
                   />
                   <p>Схема физического подключения IP-Телефонной базы Grandstream DP750</p>
                 </div>
+              </div>
 
-                <!-- ?Настройка SIP-сервера -->
-                <div id="setting-server-dp750" class="tab-pane fade">
-                  <h3>Настройка SIP-сервера</h3>
+              <!-- ?Настройка SIP-сервера -->
+              <div id="setting-server-dp750" class="tab-pane fade">
+                <h3>Настройка SIP-сервера</h3>
+                <p></p>
+                <a href="#ss_dp750">Перейти к настройкам SIP-сервера через WEB интерфейс</a>
+                <h4>Первичная настройка базы Grandstream DP750</h4>
+                <ol>
+                  <img
+                    src="./img/dp750/settings/base_searchip_dp750.png"
+                    alt="base_searchip_dp750"
+                    width="400"
+                  />
+                  <li>
+                    После подключения питания, база начнет загружаться. Необходимо подождать пару
+                    минут пока база получит от роутера (маршрутизатора) ip адрес, а на экране базы
+                    иконка
+                    <img
+                      src="./img/dp750/settings/icon_search_dp750.png"
+                      alt="icon_search_dp750"
+                      width="20"
+                    />
+                    перестанет моргать и будет гореть постоянно. После загрузки базового блока
+                    необходимо определить локальный IP адрес DP750. Заводская сетевая настройка
+                    позволяет получить его автоматически от DHCP сервера Для определения локального
+                    IP адреса, потребуется одна из подключаемых трубок Grandstream DP720 или её
+                    аналоги.
+                  </li>
                   <p></p>
-                  <a href="#ss_dp750">Перейти к настройкам SIP-сервера через WEB интерфейс</a>
-                  <h4>Первичная настройка базы Grandstream DP750</h4>
+                  <img
+                    src="./img/dp750/settings/base_search_dp750.png"
+                    alt="base_search_dp750"
+                    width="400"
+                  />
+                  <li>
+                    Проведите регистрацию трубки DP720 на базовой станции, для чего переведите базу
+                    в состояние регистрации, нажав и удерживая кнопку
+                    <img
+                      src="./img/dp750/settings/button_search_dp750.png"
+                      alt="button_search_dp750"
+                      width="20"
+                    />
+                    на задней стенке устройства до тех пор, пока на экране базы не начнет моргать.
+                    <img
+                      src="./img/dp750/settings/icon_radio_dp750.png"
+                      alt="icon_radio_dp750"
+                      width="20"
+                    />.
+                  </li>
+                  <p></p>
+                  <img
+                    src="./img/dp750/settings/connection_dp720.png"
+                    alt="connection_dp720"
+                    width="200"
+                  />
+                  <li>
+                    После этого на экране трубки отобразится название базы и в левом нижнем углу
+                    появиться кнопка "подпис..." после ее нажатия, начнется процесс регистрации
+                    трубки.
+                  </li>
+                  <p></p>
+                  <img
+                    src="./img/dp750/settings/connection_ok_dp720.png"
+                    alt="connection_ok_dp720"
+                    width="200"
+                  />
+                  <li>
+                    Ваша трубка привязана. Теперь легко узнать IP адрес базы с помощью трубки.
+                  </li>
+                  <p></p>
+                  <img src="./img/dp750/settings/menu_dp750.png" alt="menu_dp750" width="200" />
+                  <li>
+                    Кнопками навигации на трубке
+                    <img
+                      src="./img/dp750/settings/all_navigation_buttons_dp750.png"
+                      alt="all_navigation_buttons_dp750"
+                      width="20"
+                    />
+                    нажимаем
+                    <img
+                      src="./img/dp750/settings/middle_navigation_buttons_dp750.png"
+                      alt="middle_navigation_buttons_dp750"
+                      width="15"
+                    />
+                    попадаем в раздел Меню
+                  </li>
+                  <p></p>
+                  <img src="./img/dp750/settings/status_dp750.png" alt="status_dp750" width="200" />
+                  <li>
+                    Кнопками навигации на трубке
+                    <img
+                      src="./img/dp750/settings/all_navigation_buttons_dp750.png"
+                      alt="all_navigation_buttons_dp750"
+                      width="20"
+                    />
+                    выбираем Статус и нажимаем кнопку
+                    <img
+                      src="./img/dp750/settings/middle_navigation_buttons_dp750.png"
+                      alt="middle_navigation_buttons_dp750"
+                      width="15"
+                    />
+                  </li>
+                  <p></p>
+                  <img
+                    src="./img/dp750/settings/status_base_dp750.png"
+                    alt="status_base_dp750"
+                    width="200"
+                  />
+                  <li>Выбираем "Статус базы"</li>
+                  <p></p>
+                  <img
+                    src="./img/dp750/settings/ip_base_dp750.png"
+                    alt="ip_base_dp750"
+                    width="200"
+                  />
+                  <li>
+                    И видим IP базы Grandstream DP750. В нашем случае ip адрес следующий:
+                    192.168.2.34
+                  </li>
+                  <p></p>
+                  P.S.Также получить информацию об IP адресе можно с помощью вашего роутера -
+                  войдите в веб интерфейс роутера на страницу с таблицей выданных IP адресов и по
+                  МАС адресу телефона определить его IP адрес. МАС адрес указан на стикере,
+                  приклеенном на корпусе.
+                  <p></p>
+
+                  <article id="ss_dp750">
+                    <h3>Настройкам SIP-сервера через WEB интерфейс</h3>
+                  </article>
+                  <p>
+                    <b>Внимание: </b> Телефон и компьютер, на котором вы будете выполнять настройку,
+                    должны находиться в одной сети.
+                  </p>
+                  <img
+                    src="./img/dp750/settings/setting_ip_750.png"
+                    alt="setting_ip_750"
+                    width="900"
+                  />
+                  <li>
+                    Для входа на веб.интерфейс телефонной базы откройте браузер (например Google
+                    Chrome, Mozilla Firefox и т.д) на вашем компьютере, введите IP-адрес телефона в
+                    адресную строку и нажмите кнопку Enter на клавиатуре. У вас откроется страница с
+                    запросом авторизационных данных.
+                  </li>
+                  <p></p>
+                  <img src="./img/dp750/settings/pass_dp750.png" alt="pass_dp750" width="400" />
+                  <li>
+                    Меняем язык на русский. В нашем случаи логин <b>admin</b> пароль указан на
+                    коробке базы и на самой базе c обратной стороны.
+                  </li>
+                  <p></p>
+                  <img
+                    src="./img/dp750/settings/settings_profile_dp750.png"
+                    alt="settings_profile_dp750"
+                    width="600"
+                  />
+                  <p></p>
+                  <li>Зайдите в меню «Профили» > выберите «Профиль 1» > раздел «Общее»</li>
+                  <img
+                    src="./img/dp750/settings/settings_server_dp750.png"
+                    alt="settings_server_dp750"
+                    width="600"
+                  />
+                  <li>Нажмите «Сохранить и применить»</li>
+                </ol>
+              </div>
+
+              <!-- ?Настройка SIP-аккаунтов -->
+              <div id="setting-account-dp750" class="tab-pane fade">
+                <h3>Настройка SIP-аккаунтов</h3>
+                <h4>Настройка SIP-аккаунтов</h4>
+                <ol>
+                  <p></p>
+                  <img src="./img/dp750/settings/setting_sip_accounts.png" alt="" width="600" />
+                  <li>Перейдите в меню «DECT» > раздел "Настройки SIP учетной записи"</li>
+                  <p></p>
+                  <img src="./img/dp750/settings/settings_clean_accounts.png" alt="" width="600" />
+                  <p></p>
+                  <li>
+                    <ul>
+                      <li>ИД SIP-пользователя - указываем номер который хотим зарегистрировать</li>
+                      <li>
+                        Аутентификационный ID - указываем номер который хотим зарегистрировать
+                      </li>
+                      <li>Пароль - указываете пароль из личного кабинета</li>
+                      <li>
+                        Имя: можно написать любое, в нашем примере "110" (будет отображаться на
+                        экране трубки)
+                      </li>
+                      <li>
+                        Профиль - выбираем один из ранее настроенных профилей, ранее мы настраивали
+                        "Профиль1"
+                      </li>
+                      <li>
+                        Режим трубки - выбираем номер трубки к которой будет привязан данный номер
+                      </li>
+                      <li>Проверяем пункт "Аккаунт активен" должен находится в положение "Да"</li>
+                    </ul>
+                  </li>
+                  <p></p>
+                  Ниже настройки сразу пяти трубок на примере нашего офиса
+                  <p></p>
+                  <img src="./img/dp750/settings/setting_accounts.png" alt="" width="600" />
+                  <p></p>
+                  <li>
+                    Заполните поля с учетом выше указанной инструкции, Нажмите "Сохранить и
+                    применить"
+                  </li>
+                  <p></p>
+                  <img src="./img/dp750/settings/settings_dect_line1.png" alt="" width="600" />
+                  <li>
+                    В вкладке "СОСТОЯНИЕ" > "Состояние учетной записи" видим что все трубки
+                    зарегистрированы, но находятся на одной линии. Перейдите в раздел «Настройки
+                    линии трубки» и назначьте каждой линии свою трубку, как указано на примере ниже.
+                  </li>
+                  <p></p>
+                  <img src="./img/dp750/settings/settings_dect_line3.png" alt="" width="600" />
+                  <p></p>
+                  <li>После присвоении линий к трубкам нажмите "Сохранить и применить"</li>
+                  <img src="./img/dp750/settings/settingd_finish1.png" alt="" width="600" />
+                  <li>
+                    Снова переходим в вкладку "СОСТОЯНИЕ" > "Состояние учетной записи" и проверяем
+                    что к каждой трубке присвоена отдельная линия.
+                  </li>
+                  <p></p>
+                  <p>
+                    Теперь попробуйте сделать звонок с телефона на Ваш сотовый и проверить работает
+                    ли связь в действительности.
+                  </p>
+                </ol>
+                <!-- ?Информация о IP Grandstream DP750 -->
+                <div id="setting-info-ip-dp750" class="tab-pane fade">
+                  <h3>Информация о IP Grandstream DP750</h3>
+                  <h4>
+                    Как узнать IP базы Grandstream DP750 с помощью дополнительной трубки Grandstream
+                    DP720
+                  </h4>
+                  <p></p>
                   <ol>
-                    <img
-                      src="./img/dp750/settings/base_searchip_dp750.png"
-                      alt="base_searchip_dp750"
-                      width="400"
-                    />
-                    <li>
-                      После подключения питания, база начнет загружаться. Необходимо подождать пару
-                      минут пока база получит от роутера (маршрутизатора) ip адрес, а на экране базы
-                      иконка
-                      <img
-                        src="./img/dp750/settings/icon_search_dp750.png"
-                        alt="icon_search_dp750"
-                        width="20"
-                      />
-                      перестанет моргать и будет гореть постоянно. После загрузки базового блока
-                      необходимо определить локальный IP адрес DP750. Заводская сетевая настройка
-                      позволяет получить его автоматически от DHCP сервера Для определения
-                      локального IP адреса, потребуется одна из подключаемых трубок Grandstream
-                      DP720 или её аналоги.
-                    </li>
-                    <p></p>
-                    <img
-                      src="./img/dp750/settings/base_search_dp750.png"
-                      alt="base_search_dp750"
-                      width="400"
-                    />
-                    <li>
-                      Проведите регистрацию трубки DP720 на базовой станции, для чего переведите
-                      базу в состояние регистрации, нажав и удерживая кнопку
-                      <img
-                        src="./img/dp750/settings/button_search_dp750.png"
-                        alt="button_search_dp750"
-                        width="20"
-                      />
-                      на задней стенке устройства до тех пор, пока на экране базы не начнет моргать.
-                      <img
-                        src="./img/dp750/settings/icon_radio_dp750.png"
-                        alt="icon_radio_dp750"
-                        width="20"
-                      />.
-                    </li>
-                    <p></p>
-                    <img
-                      src="./img/dp750/settings/connection_dp720.png"
-                      alt="connection_dp720"
-                      width="200"
-                    />
-                    <li>
-                      После этого на экране трубки отобразится название базы и в левом нижнем углу
-                      появиться кнопка "подпис..." после ее нажатия, начнется процесс регистрации
-                      трубки.
-                    </li>
-                    <p></p>
-                    <img
-                      src="./img/dp750/settings/connection_ok_dp720.png"
-                      alt="connection_ok_dp720"
-                      width="200"
-                    />
-                    <li>
-                      Ваша трубка привязана. Теперь легко узнать IP адрес базы с помощью трубки.
-                    </li>
-                    <p></p>
                     <img src="./img/dp750/settings/menu_dp750.png" alt="menu_dp750" width="200" />
                     <li>
                       Кнопками навигации на трубке
@@ -1194,248 +1571,64 @@
                     войдите в веб интерфейс роутера на страницу с таблицей выданных IP адресов и по
                     МАС адресу телефона определить его IP адрес. МАС адрес указан на стикере,
                     приклеенном на корпусе.
-                    <p></p>
-
-                    <article id="ss_dp750">
-                      <h3>Настройкам SIP-сервера через WEB интерфейс</h3>
-                    </article>
-                    <p>
-                      <b>Внимание: </b> Телефон и компьютер, на котором вы будете выполнять
-                      настройку, должны находиться в одной сети.
-                    </p>
-                    <img
-                      src="./img/dp750/settings/setting_ip_750.png"
-                      alt="setting_ip_750"
-                      width="900"
-                    />
-                    <li>
-                      Для входа на веб.интерфейс телефонной базы откройте браузер (например Google
-                      Chrome, Mozilla Firefox и т.д) на вашем компьютере, введите IP-адрес телефона
-                      в адресную строку и нажмите кнопку Enter на клавиатуре. У вас откроется
-                      страница с запросом авторизационных данных.
-                    </li>
-                    <p></p>
-                    <img src="./img/dp750/settings/pass_dp750.png" alt="pass_dp750" width="400" />
-                    <li>
-                      Меняем язык на русский. В нашем случаи логин <b>admin</b> пароль указан на
-                      коробке базы и на самой базе c обратной стороны.
-                    </li>
-                    <p></p>
-                    <img
-                      src="./img/dp750/settings/settings_profile_dp750.png"
-                      alt="settings_profile_dp750"
-                      width="600"
-                    />
-                    <p></p>
-                    <li>Зайдите в меню «Профили» > выберите «Профиль 1» > раздел «Общее»</li>
-                    <img
-                      src="./img/dp750/settings/settings_server_dp750.png"
-                      alt="settings_server_dp750"
-                      width="600"
-                    />
-                    <li>Нажмите «Сохранить и применить»</li>
                   </ol>
                 </div>
 
-                <!-- ?Настройка SIP-аккаунтов -->
-                <div id="setting-account-dp750" class="tab-pane fade">
-                  <h3>Настройка SIP-аккаунтов</h3>
-                  <h4>Настройка SIP-аккаунтов</h4>
-                  <ol>
-                    <p></p>
-                    <img src="./img/dp750/settings/setting_sip_accounts.png" alt="" width="600" />
-                    <li>Перейдите в меню «DECT» > раздел "Настройки SIP учетной записи"</li>
-                    <p></p>
+                <div id="setting-time-gxp16xx" class="tab-pane fade">
+                  <h3>Настройка времени</h3>
+                  <p></p>
+                </div>
+                <div id="setting-language-gxp16xx" class="tab-pane fade">
+                  <h3>Настройка языка</h3>
+                  <p></p>
+                  <p>
+                    Для того чтобы изменить язык дисплея телефона при первичном подключении зайдите
+                    в «Меню» > «Preference» > «Display language» > из списка выберите «Русский»
+                  </p>
+                </div>
+                <div id="description-gxp16xx" class="tab-pane fade">
+                  <h3>Описание клавиатуры для IP-Телефона Grandstream XP1610/1615</h3>
+                  <p></p>
+                  <li>
                     <img
-                      src="./img/dp750/settings/settings_clean_accounts.png"
-                      alt=""
+                      src="./img/gxp16xx/description/description_gxp16xx.png"
+                      alt="description_gxp16xx"
                       width="600"
                     />
-                    <p></p>
-                    <li>
-                      <ul>
-                        <li>
-                          ИД SIP-пользователя - указываем номер который хотим зарегистрировать
-                        </li>
-                        <li>
-                          Аутентификационный ID - указываем номер который хотим зарегистрировать
-                        </li>
-                        <li>Пароль - указываете пароль из личного кабинета</li>
-                        <li>
-                          Имя: можно написать любое, в нашем примере "110" (будет отображаться на
-                          экране трубки)
-                        </li>
-                        <li>
-                          Профиль - выбираем один из ранее настроенных профилей, ранее мы
-                          настраивали "Профиль1"
-                        </li>
-                        <li>
-                          Режим трубки - выбираем номер трубки к которой будет привязан данный номер
-                        </li>
-                        <li>Проверяем пункт "Аккаунт активен" должен находится в положение "Да"</li>
-                      </ul>
-                    </li>
-                    <p></p>
-                    Ниже настройки сразу пяти трубок на примере нашего офиса
-                    <p></p>
-                    <img src="./img/dp750/settings/setting_accounts.png" alt="" width="600" />
-                    <p></p>
-                    <li>
-                      Заполните поля с учетом выше указанной инструкции, Нажмите "Сохранить и
-                      применить"
-                    </li>
-                    <p></p>
-                    <img src="./img/dp750/settings/settings_dect_line1.png" alt="" width="600" />
-                    <li>
-                      В вкладке "СОСТОЯНИЕ" > "Состояние учетной записи" видим что все трубки
-                      зарегистрированы, но находятся на одной линии. Перейдите в раздел «Настройки
-                      линии трубки» и назначьте каждой линии свою трубку, как указано на примере
-                      ниже.
-                    </li>
-                    <p></p>
-                    <img src="./img/dp750/settings/settings_dect_line3.png" alt="" width="600" />
-                    <p></p>
-                    <li>После присвоении линий к трубкам нажмите "Сохранить и применить"</li>
-                    <img src="./img/dp750/settings/settingd_finish1.png" alt="" width="600" />
-                    <li>
-                      Снова переходим в вкладку "СОСТОЯНИЕ" > "Состояние учетной записи" и проверяем
-                      что к каждой трубке присвоена отдельная линия.
-                    </li>
-                    <p></p>
-                    <p>
-                      Теперь попробуйте сделать звонок с телефона на Ваш сотовый и проверить
-                      работает ли связь в действительности.
-                    </p>
-                  </ol>
-                  <!-- ?Информация о IP Grandstream DP750 -->
-                  <div id="setting-info-ip-dp750" class="tab-pane fade">
-                    <h3>Информация о IP Grandstream DP750</h3>
-                    <h4>
-                      Как узнать IP базы Grandstream DP750 с помощью дополнительной трубки
-                      Grandstream DP720
-                    </h4>
                     <p></p>
                     <ol>
-                      <img src="./img/dp750/settings/menu_dp750.png" alt="menu_dp750" width="200" />
+                      <li>Для доступа к меню нажмите круглую клавишу меню.</li>
+                      <li>Для выбора пунктов меню используйте клавиши со стрелками.</li>
+                      <li>Для входа в подменю используйте клавишу меню.</li>
                       <li>
-                        Кнопками навигации на трубке
-                        <img
-                          src="./img/dp750/settings/all_navigation_buttons_dp750.png"
-                          alt="all_navigation_buttons_dp750"
-                          width="20"
-                        />
-                        нажимаем
-                        <img
-                          src="./img/dp750/settings/middle_navigation_buttons_dp750.png"
-                          alt="middle_navigation_buttons_dp750"
-                          width="15"
-                        />
-                        попадаем в раздел Меню
+                        Телефон автоматически выйдет из меню если поступит входящий звонок, будет
+                        поднята трубка или проистечению 60 секунд простоя
                       </li>
-                      <p></p>
-                      <img
-                        src="./img/dp750/settings/status_dp750.png"
-                        alt="status_dp750"
-                        width="200"
-                      />
-                      <li>
-                        Кнопками навигации на трубке
-                        <img
-                          src="./img/dp750/settings/all_navigation_buttons_dp750.png"
-                          alt="all_navigation_buttons_dp750"
-                          width="20"
-                        />
-                        выбираем Статус и нажимаем кнопку
-                        <img
-                          src="./img/dp750/settings/middle_navigation_buttons_dp750.png"
-                          alt="middle_navigation_buttons_dp750"
-                          width="15"
-                        />
-                      </li>
-                      <p></p>
-                      <img
-                        src="./img/dp750/settings/status_base_dp750.png"
-                        alt="status_base_dp750"
-                        width="200"
-                      />
-                      <li>Выбираем "Статус базы"</li>
-                      <p></p>
-                      <img
-                        src="./img/dp750/settings/ip_base_dp750.png"
-                        alt="ip_base_dp750"
-                        width="200"
-                      />
-                      <li>
-                        И видим IP базы Grandstream DP750. В нашем случае ip адрес следующий:
-                        192.168.2.34
-                      </li>
-                      <p></p>
-                      P.S.Также получить информацию об IP адресе можно с помощью вашего роутера -
-                      войдите в веб интерфейс роутера на страницу с таблицей выданных IP адресов и
-                      по МАС адресу телефона определить его IP адрес. МАС адрес указан на стикере,
-                      приклеенном на корпусе.
                     </ol>
-                  </div>
-
-                  <div id="setting-time-gxp16xx" class="tab-pane fade">
-                    <h3>Настройка времени</h3>
-                    <p></p>
-                  </div>
-                  <div id="setting-language-gxp16xx" class="tab-pane fade">
-                    <h3>Настройка языка</h3>
-                    <p></p>
-                    <p>
-                      Для того чтобы изменить язык дисплея телефона при первичном подключении
-                      зайдите в «Меню» > «Preference» > «Display language» > из списка выберите
-                      «Русский»
-                    </p>
-                  </div>
-                  <div id="description-gxp16xx" class="tab-pane fade">
-                    <h3>Описание клавиатуры для IP-Телефона Grandstream XP1610/1615</h3>
-                    <p></p>
-                    <li>
-                      <img
-                        src="./img/gxp16xx/description/description_gxp16xx.png"
-                        alt="description_gxp16xx"
-                        width="600"
-                      />
-                      <p></p>
-                      <ol>
-                        <li>Для доступа к меню нажмите круглую клавишу меню.</li>
-                        <li>Для выбора пунктов меню используйте клавиши со стрелками.</li>
-                        <li>Для входа в подменю используйте клавишу меню.</li>
-                        <li>
-                          Телефон автоматически выйдет из меню если поступит входящий звонок, будет
-                          поднята трубка или проистечению 60 секунд простоя
-                        </li>
-                      </ol>
-                    </li>
-                  </div>
+                  </li>
                 </div>
+              </div>
 
-                <div id="instruction-gxp16xx" class="tab-pane fade">
-                  <h3>
-                    Краткое руководство пользования для IP-Телефона Grandstream
-                    XP1610/1615/1620/1625/1628/1630
-                  </h3>
-                  <p></p>
+              <div id="instruction-gxp16xx" class="tab-pane fade">
+                <h3>
+                  Краткое руководство пользования для IP-Телефона Grandstream
+                  XP1610/1615/1620/1625/1628/1630
+                </h3>
+                <p></p>
 
-                  <img
-                    src="./img/gxp16xx/instruction/instruction_gxp16xx.jpg"
-                    alt="instruction_gxp16xx"
-                    width="1200"
-                  />
-                </div>
-                <div id="malfunction-gxp16xx" class="tab-pane fade">
-                  <h3>Неисправность</h3>
-                  <p>Неисправность gxp16xx</p>
-                </div>
+                <img
+                  src="./img/gxp16xx/instruction/instruction_gxp16xx.jpg"
+                  alt="instruction_gxp16xx"
+                  width="1200"
+                />
+              </div>
+              <div id="malfunction-gxp16xx" class="tab-pane fade">
+                <h3>Неисправность</h3>
+                <p>Неисправность gxp16xx</p>
               </div>
             </div>
           </div>
-          <!-- !close div GS GXP16XX -->
         </main>
-        <!-- !close main col-xs-10 -->
       </div>
     </div>
   </body>
