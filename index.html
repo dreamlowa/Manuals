@@ -13,19 +13,36 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <!-- !Secondary content -->
+        <!-- !Левое меню -->
         <div class="col-lg-2 navbar-container bg-light" data-target="#navbar">
-          <div class="navbar" id="accordion">
-            <!-- ?Accardion Информация о системе -->
+          <div class="navbar" data-spy="affix" id="accordion">
+            <!-- ?Авторизация в IP ATC -->
             <div class="panel panel-default" data-toggle="collapse">
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse">
-                    Информация о системе
+                    Авторизация в IP ATC
                   </a>
                 </h4>
               </div>
               <div id="collapse" class="panel-collapse collapse">
+                <ul class="list-group nav-tab">
+                  <li class="list-group-item panel-title">
+                    <a href="#authorization" data-toggle="tab">Авторизация в IP ATC</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- ?Accardion Информация о системе -->
+            <div class="panel panel-default" data-toggle="collapse">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse0">
+                    Информация о системе
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse0" class="panel-collapse collapse">
                 <ul class="list-group nav-tab">
                   <li class="list-group-item panel-title">
                     <a href="#performance" data-toggle="tab">Производительность и ...</a>
@@ -51,10 +68,10 @@
               <div id="collapse1" class="panel-collapse collapse">
                 <ul class="list-group nav-tab">
                   <li class="list-group-item panel-title">
-                    <a href="#" data-toggle="tab">Абоненты</a>
+                    <a href="#subscribers" data-toggle="tab">Абоненты</a>
                   </li>
                   <li class="list-group-item panel-title">
-                    <a href="#" data-toggle="tab">Транки</a>
+                    <a href="#trunks" data-toggle="tab">Транки</a>
                   </li>
                   <li class="list-group-item panel-title">
                     <a href="#" data-toggle="tab">Шаблоны настроек</a>
@@ -238,10 +255,10 @@
               <div id="collapse7" class="panel-collapse collapse">
                 <ul class="list-group nav-tab">
                   <li class="list-group-item panel-title">
-                    <a href="#" data-toggle="tab">Пользователи</a>
+                    <a href="#users" data-toggle="tab">Пользователи</a>
                   </li>
                   <li class="list-group-item panel-title">
-                    <a href="#" data-toggle="tab">Интерфейсы пользователей</a>
+                    <a href="#user_interfaces" data-toggle="tab">Интерфейсы пользователей</a>
                   </li>
                   <li class="list-group-item panel-title">
                     <a href="#" data-toggle="tab">Список доступа</a>
@@ -347,23 +364,97 @@
           </div>
         </div>
 
-        <!-- !Main-content -->
+        <!-- !Основное описание -->
         <main class="col-xs-10">
           <div class="tab-content">
-            <!-- ?Accardion Настройки IP ATC -->
+            <!-- ?Авторизация в IP ATC -->
+            <!--todo: производительность и нагрузка -->
+            <div id="authorization" class="tab-pane fade">
+              <div class="page-header">
+                <h3>Авторизация в IP ATC Krasterisk</h3>
+              </div>
+              <p>
+                Взаимодействие с IP ATC Krasterisk осуществляется через WEB-интерфейс. <br />
+                Для начала работы на пользовательском ПК не требуется инсталляция дополнительного
+                программного обеспечения. поддерживается большинство современных WEB-браузеров.<br />
+              </p>
+              <img
+                class="img-thumbnail"
+                src="/img/Base/authorization/authorization.png"
+                alt="authorization"
+                width="300"
+              />
+              <p>
+                Для авторизации в системе необходимы учётные данные (Пользователь, Внутренний номер
+                и пароль).<br />
+                Данные для авторизации генерируются администратором системы.
+              </p>
+              <div class="page-header">
+                <h4>Внутренний номер</h4>
+              </div>
+              <p>Для чего же нужно это поле ?</p>
+            </div>
+            <!-- ?Информация о системе -->
             <!-- todo Производительность и нагрузка -->
             <div id="performance" class="tab-pane fade">
-              <h3>Производительность и нагрузка</h3>
+              <div class="page-header">
+                <h3>Производительность и нагрузка</h3>
+              </div>
               <p></p>
               <img src="" alt="performance" width="600" />
               <p>performance</p>
             </div>
             <!-- todo АТС -->
             <div id="atc" class="tab-pane fade">
-              <h3>ATC</h3>
+              <div class="page-header">
+                <h3>АТС</h3>
+              </div>
               <p></p>
               <img src="" alt="atc" width="600" />
               <p>atc</p>
+            </div>
+            <!-- ?Настройки IP ATC -->
+            <!-- todo Абоненты -->
+            <div id="subscribers" class="tab-pane fade">
+              <div class="page-header">
+                <h3>Абоненты</h3>
+              </div>
+              <p></p>
+              <img src="" alt="" width="600" />
+              <p>subscribers</p>
+            </div>
+            <!-- todo Транки -->
+            <div id="trunks" class="tab-pane fade">
+              <div class="page-header">
+                <h3>Транки</h3>
+              </div>
+              <p></p>
+              <img src="" alt="" width="600" />
+              <p>trunks</p>
+            </div>
+            <!-- ?Система -->
+            <!-- todo Пользователи -->
+            <div id="users" class="tab-pane fade">
+              <div class="page-header">
+                <h3>Пользователи</h3>
+              </div>
+              <p></p>
+              <img class="img-thumbnail" src="" alt="" width="600" />
+              <p>Пользователи</p>
+            </div>
+            <!-- todo Интерфейсы пользователей -->
+            <div id="user_interfaces" class="tab-pane fade">
+              <div class="page-header">
+                <h3>Интерфейсы пользователей</h3>
+              </div>
+              <p></p>
+              <img
+                class="img-thumbnail"
+                src="./img/Base/systems/interface/interface1.png"
+                alt="Новый интерфейс"
+                width="600"
+              />
+              <p>Интерфейсы пользователей</p>
             </div>
             <!-- ?Настройка Софтфонов -->
             <!-- todo MicroSIP -->
@@ -400,13 +491,10 @@
               <div class="tab-content">
                 <!--  ?Install-content-MicroSIP  -->
                 <div id="install_microsip" class="tab-pane fade in active">
-                  <h3>Установка софтфона "MicroSIP"</h3>
-                  <h4>
-                    <a href="https://www.microsip.org/" target="_blank" alt="MicroSIP">
-                      Официальный сайт</a
-                    >
-                    разработчика софтфона "MicroSIP"
-                  </h4>
+                  <div class="page-header">
+                    <h3>Установка софтфона "MicroSIP"</h3>
+                  </div>
+
                   <ol>
                     <li>
                       Скачиваем софтфон
@@ -419,6 +507,7 @@
                     <li>Запустите фаил установки программы "MicroSIP"</li>
                     <p class="divider"></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/install_microsip/install_language.png"
                       alt="install_language"
                       width="250"
@@ -426,6 +515,7 @@
                     <li>Выберете русский язык и нажмите "OK"</li>
                     <p class="divider"></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/install_microsip/install_hello.png"
                       alt="install_hello"
                       width="400"
@@ -433,6 +523,7 @@
                     <li>Нажмите "Далее"</li>
                     <p class="divider"></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/install_microsip/install_license.png"
                       alt="install_license"
                       width="400"
@@ -440,6 +531,7 @@
                     <li>Принимаем условия лицензионного соглашения нажав "Принимаю"</li>
                     <p class="divider"></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/install_microsip/install_components.png"
                       alt="install_components"
                       width="400"
@@ -450,6 +542,7 @@
                     </li>
                     <p class="divider"></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/install_microsip/Install_path.png"
                       alt="Install_path"
                       width="400"
@@ -460,6 +553,7 @@
                     </li>
                     <p class="divider"></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/install_microsip/Install_start_menu.png"
                       alt="Install_start_menu"
                       width="400"
@@ -467,6 +561,7 @@
                     <li>Выбор папки в меню "Пуск" оставляем по умолчанию и нажимаем "Далее"</li>
                     <p class="divider"></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/install_microsip/install_inst.png"
                       alt="install_inst"
                       width="400"
@@ -474,6 +569,7 @@
                     <li>Ожидаем установку программы "MicroSIp"</li>
                     <p class="divider"></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/install_microsip/install_completion.png"
                       alt="install_completion"
                       width="400"
@@ -486,11 +582,14 @@
                 </div>
                 <!--  ?Setting-content-MicroSIP  -->
                 <div id="setting_microsip" class="tab-pane fade">
-                  <h3>Настройка аккаунта "MicroSIP"</h3>
+                  <div class="page-header">
+                    <h3>Настройка аккаунта "MicroSIP"</h3>
+                  </div>
                   <p class="divider"></p>
                   <h4>После установки откройте программу "MicroSIP"</h4>
                   <ol>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/setting_microsip/setting_start.png"
                       alt="setting_start"
                       width="200"
@@ -498,6 +597,7 @@
                     <li>
                       Нажмите на иконку
                       <img
+                        class="img-thumbnail"
                         src="./img/microsip/setting_microsip/setting_point.png"
                         alt="setting_point"
                         width="20"
@@ -505,12 +605,14 @@
                       в правом верхнем углу
                     </li>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/setting_microsip/setting_add.png"
                       alt="setting_add"
                       width="400"
                     />
                     <li>После открытия меню нажмите пункт "Добавить аккаунт..."</li>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/setting_microsip/setting_add_panel.png"
                       alt="setting_add_panel"
                       width="300"
@@ -542,6 +644,7 @@
                       </ul>
                     </li>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/setting_microsip/setting_sample.png"
                       alt="setting_sample"
                       width="300"
@@ -552,6 +655,7 @@
                       зелёный и у вас появиться возможность совершать и принимать звонки.
                     </li>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/setting_microsip/setting_registered.png"
                       alt="setting_registered"
                       width="200"
@@ -559,12 +663,16 @@
                     <li>Ваш "MicroSIP" готов к работе</li>
                   </ol>
                 </div>
-                <!--  Malfunction-content-MicroSIP  -->
+                <!--  ?Malfunction-content-MicroSIP  -->
                 <div id="not_pass_microsip" class="tab-pane fade">
-                  <h3>Неверный пароль в "MicroSIP"</h3>
+                  <div class="page-header">
+                    <h3>Неверный пароль в "MicroSIP"</h3>
+                  </div>
+
                   <p class="divider"></p>
                   <ol>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/malfunction_microsip/not_pass.png"
                       alt="not_pass"
                       width="400"
@@ -586,10 +694,14 @@
                   </ol>
                 </div>
                 <div id="not_server_microsip" class="tab-pane fade">
-                  <h3>Сервер не найден в "MicroSIP"</h3>
+                  <div class="page-header">
+                    <h3>Сервер не найден в "MicroSIP"</h3>
+                  </div>
+
                   <p class="divider"></p>
                   <ol>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/malfunction_microsip/not_server.png"
                       alt="not_server"
                       width="400"
@@ -618,10 +730,14 @@
                   </ol>
                 </div>
                 <div id="no_name_microsip" class="tab-pane fade">
-                  <h3>Ошибка "Не найден" в "MicroSIP"</h3>
+                  <div class="page-header">
+                    <h3>Ошибка "Не найден" в "MicroSIP"</h3>
+                  </div>
+
                   <p class="divider"></p>
                   <ol>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/malfunction_microsip/no_name.png"
                       alt="no_name"
                       width="400"
@@ -650,10 +766,13 @@
                   </ol>
                 </div>
                 <div id="timeout_microsip" class="tab-pane fade">
-                  <h3>Таймаут в "MicroSIP"</h3>
+                  <div class="page-header">
+                    <h3>Таймаут в "MicroSIP"</h3>
+                  </div>
                   <p class="divider"></p>
                   <ol>
                     <img
+                      class="img-thumbnail"
                       src="./img/microsip/malfunction_microsip/timeout.png"
                       alt="timeout"
                       width="400"
@@ -703,11 +822,14 @@
                   </ul>
                 </li>
               </ul>
-              <!-- ?Main-content-3CX Phone  -->
+
+              <!-- !Main-content-3CX Phone  -->
               <div class="tab-content">
                 <!-- ?Install-content-3CX Phone  -->
                 <div id="install_3cxphone" class="tab-pane fade in active">
-                  <h3>Установка софтфона "3CX Phone"</h3>
+                  <div class="page-header">
+                    <h3>Установка софтфона "3CX Phone"</h3>
+                  </div>
                   <h4>
                     <a href="https://www.3cx.ru/" target="_blank" alt="3CX Phone">
                       Официальный сайт</a
@@ -725,12 +847,14 @@
                     <p class="divider"></p>
                     <li>Запустите скаченный фаил установки программы "3CX Phone"</li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/install_3cxphone/install_welcome.png"
                       alt="install_welcome"
                       width="400"
                     />
                     <li>Мастер установки приветствует и просит нажать "Next"</li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/install_3cxphone/install_license.png"
                       alt="install_license"
                       width="400"
@@ -740,6 +864,7 @@
                       "Next"
                     </li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/install_3cxphone/Install_path.png"
                       alt="Install_path"
                       width="400"
@@ -749,18 +874,21 @@
                       умолчанию и нажать "Next"
                     </li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/install_3cxphone/Install_ready.png"
                       alt="Install_ready"
                       width="400"
                     />
                     <li>Далее нажимаем "Install"</li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/install_3cxphone/install_status.png"
                       alt="install_inst"
                       width="400"
                     />
                     <li>Ожидаем установку программы "3CX Phone"</li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/install_3cxphone/install_finish.png"
                       alt="install_finish"
                       width="400"
@@ -773,11 +901,14 @@
                 </div>
                 <!-- ?Setting-content-3CX Phone  -->
                 <div id="setting_3cxphone" class="tab-pane fade">
-                  <h3>Настройка аккаунта "3CX Phone"</h3>
+                  <div class="page-header">
+                    <h3>Настройка аккаунта "3CX Phone"</h3>
+                  </div>
                   <p class="divider"></p>
                   <h4>После установки откройте программу "3CX Phone"</h4>
                   <ol>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/setting_3cxphone/setting_start.png"
                       alt="setting_start"
                       width="300"
@@ -787,12 +918,14 @@
                       Profile)
                     </li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/setting_3cxphone/setting_add.png"
                       alt="setting_add"
                       width="400"
                     />
                     <li>После открытия меню нажмите пункт "New"</li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/setting_3cxphone/setting_empty.png"
                       alt="setting_empty"
                       width="300"
@@ -828,6 +961,7 @@
                       </ul>
                     </li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/setting_3cxphone/setting_sample.png"
                       alt="setting_sample"
                       width="300"
@@ -837,6 +971,7 @@
                       настроено корректно, то статус учетной записи изменился на «On hook».
                     </li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/setting_3cxphone/setting_finish.png"
                       alt="setting_finish"
                       width="200"
@@ -844,13 +979,16 @@
                     <li>Ваш "3CX Phone" готов к работе</li>
                   </ol>
                 </div>
-                <!--  Malfunction-content-3CX Phone  -->
+                <!--  ?Malfunction-content-3CX Phone  -->
                 <div id="not_connected_3cxphone" class="tab-pane fade">
-                  <h3>Not connected в "3CX Phone"</h3>
+                  <div class="page-header">
+                    <h3>Not connected в "3CX Phone"</h3>
+                  </div>
                   <h4>У вас отображается "Not connected" (Нет соединения) с сервером АТC?</h4>
                   <p class="divider"></p>
                   <ol>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/malfunction_3cxphone/not_connected.png"
                       alt="not_connected"
                       width="200"
@@ -860,12 +998,14 @@
                       проверьте настройки профиля, как описано ниже
                     </li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/malfunction_3cxphone/not_connected_user.png"
                       alt="not_connected_user"
                       width="200"
                     />
                     <li>Нажимаем на "Имя аккаунта" в нашем примере - это "110"</li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/malfunction_3cxphone/not_connected_edit.png"
                       alt="not_connected_edit"
                       width="400"
@@ -875,6 +1015,7 @@
                       "Edit"
                     </li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/malfunction_3cxphone/not_connected_sample.png"
                       alt="not_connected_sample"
                       width="400"
@@ -883,6 +1024,7 @@
                       Проверьте настройки профиля, в примере абонент забыл в поле "ID" поставить 0
                     </li>
                     <img
+                      class="img-thumbnail"
                       src="./img/3cxphone/malfunction_3cxphone/not_connected_mal.png"
                       alt="not_connected_mal"
                       width="400"
@@ -935,7 +1077,6 @@
 
               <div class="tab-content">
                 <div id="first-tab-content" class="tab-pane fade">
-                  <h3>Первый заголовок</h3>
                   <p></p>
                 </div>
                 <div id="second-tab-content" class="tab-pane fade in active">
@@ -961,10 +1102,13 @@
             <!-- ?Проводные IP Телефонов -->
             <!-- todo GS GXP16XX -->
             <div id="gs_gpx16xx" class="tab-pane fade">
+              <!-- ? Вкладки -->
               <ul class="nav nav-tabs">
+                <!-- ? Вкладка Подключение -->
                 <li class="active">
                   <a href="#connection-gxp16xx" data-toggle="tab">Подключение</a>
                 </li>
+                <!-- ? Вкладка Настройка -->
                 <li role="presentation" class="dropdown">
                   <a href="#" class="third-toggle" data-toggle="dropdown">
                     Настройка <span class="caret"></span>
@@ -982,7 +1126,7 @@
                       <a href="#setting-language-gxp16xx" data-toggle="tab">Настройка языка</a>
                     </li>
                     <li>
-                      <a href="#setting-infoip-gxp16xx" data-toggle="tab">Информация о IP </a>
+                      <a href="#setting-infoip-gxp16xx" data-toggle="tab">Информация об IP </a>
                     </li>
                     <li class="divider"></li>
                     <li>
@@ -990,6 +1134,7 @@
                     </li>
                   </ul>
                 </li>
+                <!-- ? Вкладка Неисправность -->
                 <li role="presentation" class="dropdown">
                   <a href="#" class="third-toggle" data-toggle="dropdown">
                     Неисправность
@@ -1004,6 +1149,7 @@
                     </li>
                   </ul>
                 </li>
+                <!-- ? Вкладка Инструкция -->
                 <li role="presentation" class="dropdown">
                   <a href="#" class="third-toggle" data-toggle="dropdown">
                     Инструкции <span class="caret"></span>
@@ -1022,10 +1168,12 @@
 
               <div class="tab-content">
                 <div id="connection-gxp16xx" class="tab-pane fade in active">
-                  <h3>Подключение IP-Телефона Grandstream GXP16XX</h3>
+                  <div class="page-header">
+                    <h3>Подключение IP-Телефона Grandstream GXP16XX</h3>
+                  </div>
                   <p></p>
-
                   <img
+                    class="img-thumbnail"
                     src="./img/gxp16xx/connection/connection_diagram_gxp16xx.png"
                     alt="connection_diagram_gxp16xx"
                     width="600"
@@ -1033,11 +1181,15 @@
                   <p>Схема физического подключения IP-телефона</p>
                 </div>
                 <div id="setting-account-gxp16xx" class="tab-pane fade">
-                  <h3>Настройка SIP-аккаунта</h3>
+                  <div class="page-header">
+                    <h3>Настройка SIP-аккаунта</h3>
+                  </div>
+
                   <p></p>
                   <h4>Первичная настройка SIP-аккаунта</h4>
                   <ol>
                     <img
+                      class="img-thumbnail"
                       src="./img/gxp16xx/setting/setting_gxp16xx_nextsrc.png"
                       alt="setting_gxp16xx_nextsrc"
                       width="400"
@@ -1051,6 +1203,7 @@
                     </li>
                     <p></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/gxp16xx/setting/setting_gxp16xx_ip.png"
                       alt="setting_gxp16xx_ip"
                       width="400"
@@ -1058,6 +1211,7 @@
                     <li>В нашем случае ip адрес следующий: 192.168.2.45</li>
                     <p></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/gxp16xx/setting/setting_in_gxp16xx.png"
                       alt="setting_in_gxp16xx"
                       width="900"
@@ -1068,6 +1222,7 @@
                     </li>
                     <p></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/gxp16xx/setting/setting_input_gxp16xx.png"
                       alt="setting_input_gxp16xx"
                       width="500"
@@ -1079,6 +1234,7 @@
                     </li>
                     <p></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/gxp16xx/setting/setting_point_account_1_gxp16xx.png"
                       alt="setting_point_account_1_gxp16xx"
                       width="700"
@@ -1086,6 +1242,7 @@
                     <li>Выбираем пункт "УЧЕТНЫЕ ЗАПИСИ", далее "АККАУНТ" 1 и выбираем "Общее".</li>
                     <p></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/gxp16xx/setting/settings_account_gxp16xx.png"
                       alt="settings_account_gxp16xx.png"
                       width="700"
@@ -1105,12 +1262,14 @@
                       применить". Ждем пока применятся настройки и, если все было настроено
                       корректно, то иконка "статус" учетной записи изменится с
                       <img
+                        class="img-thumbnail"
                         src="./img/gxp16xx/setting/setting_icon_no_registry_gpx16xx.png"
                         alt="setting_icon_no_registry_gpx16xx"
                         width="25"
                       />
                       на
                       <img
+                        class="img-thumbnail"
                         src="./img/gxp16xx/setting/setting_icon_registry_gpx16xx.png"
                         alt="setting_icon_registry_gpx16xx"
                         width="30"
@@ -1118,6 +1277,7 @@
                     </p>
                     <p></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/gxp16xx/setting/setting_condition_account_gxp16xx.png"
                       alt="setting_condition_account_gxp16xx"
                       width="700"
@@ -1128,6 +1288,7 @@
                     </li>
                     <p></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/gxp16xx/setting/setting_registry_account_gxp16xx.png"
                       alt="setting_registry_account_gxp16xx"
                       width="700"
@@ -1137,7 +1298,12 @@
                       прошло успешно
                     </li>
                     <p></p>
-                    <img src="./img/gxp16xx/setting/" alt="setting_empty" width="700" />
+                    <img
+                      class="img-thumbnail"
+                      src="./img/gxp16xx/setting/"
+                      alt="setting_empty"
+                      width="700"
+                    />
                     <li>
                       На самом телефоне тоже отображается 110. Теперь попробуйте сделать звонок с
                       телефона на Ваш сотовый и проверить работает ли связь в действительности.
@@ -1145,11 +1311,15 @@
                   </ol>
                 </div>
                 <div id="setting-time-gxp16xx" class="tab-pane fade">
-                  <h3>Настройка времени</h3>
+                  <div class="page-header">
+                    <h3>Настройка времени</h3>
+                  </div>
                   <p></p>
                 </div>
                 <div id="setting-language-gxp16xx" class="tab-pane fade">
-                  <h3>Настройка языка</h3>
+                  <div class="page-header">
+                    <h3>Настройка языка</h3>
+                  </div>
                   <p></p>
                   <p>
                     Для того чтобы изменить язык дисплея телефона при первичном подключении зайдите
@@ -1157,10 +1327,13 @@
                   </p>
                 </div>
                 <div id="description-gxp16xx" class="tab-pane fade">
-                  <h3>Описание клавиатуры для IP-Телефона Grandstream XP1610/1615</h3>
+                  <div class="page-header">
+                    <h3>Описание клавиатуры для IP-Телефона Grandstream XP1610/1615</h3>
+                  </div>
                   <p></p>
                   <li>
                     <img
+                      class="img-thumbnail"
                       src="./img/gxp16xx/description/description_gxp16xx.png"
                       alt="description_gxp16xx"
                       width="600"
@@ -1178,19 +1351,24 @@
                   </li>
                 </div>
                 <div id="instruction-gxp16xx" class="tab-pane fade">
-                  <h3>
-                    Краткое руководство пользования для IP-Телефона Grandstream
-                    XP1610/1615/1620/1625/1628/1630
-                  </h3>
+                  <div class="page-header">
+                    <h3>
+                      Краткое руководство пользования для IP-Телефона Grandstream
+                      XP1610/1615/1620/1625/1628/1630
+                    </h3>
+                  </div>
                   <p></p>
                   <img
+                    class="img-thumbnail"
                     src="./img/gxp16xx/instruction/instruction_gxp16xx.jpg"
                     alt="instruction_gxp16xx"
                     width="1200"
                   />
                 </div>
                 <div id="malfunction-gxp16xx" class="tab-pane fade">
-                  <h3>Неисправность</h3>
+                  <div class="page-header">
+                    <h3>Неисправность</h3>
+                  </div>
                   <p>Неисправность gxp16xx</p>
                 </div>
               </div>
@@ -1202,7 +1380,6 @@
                 <li class="active">
                   <a href="#connection-dp750" data-toggle="tab">Подключение</a>
                 </li>
-
                 <li role="presentation" class="dropdown">
                   <a href="#" class="third-toggle" data-toggle="dropdown">
                     Настройка <span class="caret"></span>
@@ -1229,7 +1406,6 @@
                     </li>
                   </ul>
                 </li>
-
                 <li role="presentation" class="dropdown">
                   <a href="#" class="third-toggle" data-toggle="dropdown">
                     Неисправность
@@ -1244,7 +1420,6 @@
                     </li>
                   </ul>
                 </li>
-
                 <li role="presentation" class="dropdown">
                   <a href="#" class="third-toggle" data-toggle="dropdown">
                     Инструкции <span class="caret"></span>
@@ -1260,260 +1435,327 @@
                 </li>
               </ul>
               <!-- закрытие вкладок GS DP750 -->
-
-              <!-- ?Подключение -->
               <div class="tab-content">
+                <!-- ?Подключение -->
                 <div id="connection-dp750" class="tab-pane fade in active">
-                  <h3>Подключение IP-Телефонной базы Grandstream DP750</h3>
+                  <div class="page-header">
+                    <h3>Подключение IP-Телефонной базы Grandstream DP750</h3>
+                  </div>
                   <p></p>
                   <img
+                    class="img-thumbnail"
                     src="./img/dp750/connection/connection_diagram_dp750.png"
                     alt="connection_diagram_dp750"
                     width="400"
                   />
                   <p>Схема физического подключения IP-Телефонной базы Grandstream DP750</p>
                 </div>
-              </div>
+                <!-- ?Настройка SIP-сервера -->
+                <div id="setting-server-dp750" class="tab-pane fade">
+                  <div class="page-header">
+                    <h3>Настройка SIP-сервера</h3>
+                  </div>
+                  <p></p>
+                  <a href="#ss_dp750">Перейти к настройкам SIP-сервера через WEB интерфейс</a>
+                  <h4>Первичная настройка базы Grandstream DP750</h4>
+                  <ol>
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/base_searchip_dp750.png"
+                      alt="base_searchip_dp750"
+                      width="400"
+                    />
+                    <li>
+                      После подключения питания, база начнет загружаться. Необходимо подождать пару
+                      минут пока база получит от роутера (маршрутизатора) ip адрес, а на экране базы
+                      иконка
+                      <img
+                        src="./img/dp750/settings/icon_search_dp750.png"
+                        alt="icon_search_dp750"
+                        width="20"
+                      />
+                      перестанет моргать и будет гореть постоянно. После загрузки базового блока
+                      необходимо определить локальный IP адрес DP750. Заводская сетевая настройка
+                      позволяет получить его автоматически от DHCP сервера Для определения
+                      локального IP адреса, потребуется одна из подключаемых трубок Grandstream
+                      DP720 или её аналоги.
+                    </li>
+                    <p></p>
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/base_search_dp750.png"
+                      alt="base_search_dp750"
+                      width="400"
+                    />
+                    <li>
+                      Проведите регистрацию трубки DP720 на базовой станции, для чего переведите
+                      базу в состояние регистрации, нажав и удерживая кнопку
+                      <img
+                        src="./img/dp750/settings/button_search_dp750.png"
+                        alt="button_search_dp750"
+                        width="20"
+                      />
+                      на задней стенке устройства до тех пор, пока на экране базы не начнет моргать.
+                      <img
+                        src="./img/dp750/settings/icon_radio_dp750.png"
+                        alt="icon_radio_dp750"
+                        width="20"
+                      />.
+                    </li>
+                    <p></p>
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/connection_dp720.png"
+                      alt="connection_dp720"
+                      width="200"
+                    />
+                    <li>
+                      После этого на экране трубки отобразится название базы и в левом нижнем углу
+                      появиться кнопка "подпис..." после ее нажатия, начнется процесс регистрации
+                      трубки.
+                    </li>
+                    <p></p>
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/connection_ok_dp720.png"
+                      alt="connection_ok_dp720"
+                      width="200"
+                    />
+                    <li>
+                      Ваша трубка привязана. Теперь легко узнать IP адрес базы с помощью трубки.
+                    </li>
+                    <p></p>
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/menu_dp750.png"
+                      alt="menu_dp750"
+                      width="200"
+                    />
+                    <li>
+                      Кнопками навигации на трубке
+                      <img
+                        src="./img/dp750/settings/all_navigation_buttons_dp750.png"
+                        alt="all_navigation_buttons_dp750"
+                        width="20"
+                      />
+                      нажимаем
+                      <img
+                        src="./img/dp750/settings/middle_navigation_buttons_dp750.png"
+                        alt="middle_navigation_buttons_dp750"
+                        width="15"
+                      />
+                      попадаем в раздел Меню
+                    </li>
+                    <p></p>
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/status_dp750.png"
+                      alt="status_dp750"
+                      width="200"
+                    />
+                    <li>
+                      Кнопками навигации на трубке
+                      <img
+                        src="./img/dp750/settings/all_navigation_buttons_dp750.png"
+                        alt="all_navigation_buttons_dp750"
+                        width="20"
+                      />
+                      выбираем Статус и нажимаем кнопку
+                      <img
+                        src="./img/dp750/settings/middle_navigation_buttons_dp750.png"
+                        alt="middle_navigation_buttons_dp750"
+                        width="15"
+                      />
+                    </li>
+                    <p></p>
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/status_base_dp750.png"
+                      alt="status_base_dp750"
+                      width="200"
+                    />
+                    <li>Выбираем "Статус базы"</li>
+                    <p></p>
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/ip_base_dp750.png"
+                      alt="ip_base_dp750"
+                      width="200"
+                    />
+                    <li>
+                      И видим IP базы Grandstream DP750. В нашем случае ip адрес следующий:
+                      192.168.2.34
+                    </li>
+                    <p></p>
+                    P.S.Также получить информацию об IP адресе можно с помощью вашего роутера -
+                    войдите в веб интерфейс роутера на страницу с таблицей выданных IP адресов и по
+                    МАС адресу телефона определить его IP адрес. МАС адрес указан на стикере,
+                    приклеенном на корпусе.
+                    <p></p>
 
-              <!-- ?Настройка SIP-сервера -->
-              <div id="setting-server-dp750" class="tab-pane fade">
-                <h3>Настройка SIP-сервера</h3>
-                <p></p>
-                <a href="#ss_dp750">Перейти к настройкам SIP-сервера через WEB интерфейс</a>
-                <h4>Первичная настройка базы Grandstream DP750</h4>
-                <ol>
-                  <img
-                    src="./img/dp750/settings/base_searchip_dp750.png"
-                    alt="base_searchip_dp750"
-                    width="400"
-                  />
-                  <li>
-                    После подключения питания, база начнет загружаться. Необходимо подождать пару
-                    минут пока база получит от роутера (маршрутизатора) ip адрес, а на экране базы
-                    иконка
+                    <article id="ss_dp750">
+                      <h3>Настройкам SIP-сервера через WEB интерфейс</h3>
+                    </article>
+                    <p>
+                      <b>Внимание: </b> Телефон и компьютер, на котором вы будете выполнять
+                      настройку, должны находиться в одной сети.
+                    </p>
                     <img
-                      src="./img/dp750/settings/icon_search_dp750.png"
-                      alt="icon_search_dp750"
-                      width="20"
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/setting_ip_750.png"
+                      alt="setting_ip_750"
+                      width="900"
                     />
-                    перестанет моргать и будет гореть постоянно. После загрузки базового блока
-                    необходимо определить локальный IP адрес DP750. Заводская сетевая настройка
-                    позволяет получить его автоматически от DHCP сервера Для определения локального
-                    IP адреса, потребуется одна из подключаемых трубок Grandstream DP720 или её
-                    аналоги.
-                  </li>
-                  <p></p>
-                  <img
-                    src="./img/dp750/settings/base_search_dp750.png"
-                    alt="base_search_dp750"
-                    width="400"
-                  />
-                  <li>
-                    Проведите регистрацию трубки DP720 на базовой станции, для чего переведите базу
-                    в состояние регистрации, нажав и удерживая кнопку
+                    <li>
+                      Для входа на веб.интерфейс телефонной базы откройте браузер (например Google
+                      Chrome, Mozilla Firefox и т.д) на вашем компьютере, введите IP-адрес телефона
+                      в адресную строку и нажмите кнопку Enter на клавиатуре. У вас откроется
+                      страница с запросом авторизационных данных.
+                    </li>
+                    <p></p>
                     <img
-                      src="./img/dp750/settings/button_search_dp750.png"
-                      alt="button_search_dp750"
-                      width="20"
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/pass_dp750.png"
+                      alt="pass_dp750"
+                      width="400"
                     />
-                    на задней стенке устройства до тех пор, пока на экране базы не начнет моргать.
+                    <li>
+                      Меняем язык на русский. В нашем случаи логин <b>admin</b> пароль указан на
+                      коробке базы и на самой базе c обратной стороны.
+                    </li>
+                    <p></p>
                     <img
-                      src="./img/dp750/settings/icon_radio_dp750.png"
-                      alt="icon_radio_dp750"
-                      width="20"
-                    />.
-                  </li>
-                  <p></p>
-                  <img
-                    src="./img/dp750/settings/connection_dp720.png"
-                    alt="connection_dp720"
-                    width="200"
-                  />
-                  <li>
-                    После этого на экране трубки отобразится название базы и в левом нижнем углу
-                    появиться кнопка "подпис..." после ее нажатия, начнется процесс регистрации
-                    трубки.
-                  </li>
-                  <p></p>
-                  <img
-                    src="./img/dp750/settings/connection_ok_dp720.png"
-                    alt="connection_ok_dp720"
-                    width="200"
-                  />
-                  <li>
-                    Ваша трубка привязана. Теперь легко узнать IP адрес базы с помощью трубки.
-                  </li>
-                  <p></p>
-                  <img src="./img/dp750/settings/menu_dp750.png" alt="menu_dp750" width="200" />
-                  <li>
-                    Кнопками навигации на трубке
-                    <img
-                      src="./img/dp750/settings/all_navigation_buttons_dp750.png"
-                      alt="all_navigation_buttons_dp750"
-                      width="20"
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/settings_profile_dp750.png"
+                      alt="settings_profile_dp750"
+                      width="600"
                     />
-                    нажимаем
+                    <p></p>
+                    <li>Зайдите в меню «Профили» > выберите «Профиль 1» > раздел «Общее»</li>
                     <img
-                      src="./img/dp750/settings/middle_navigation_buttons_dp750.png"
-                      alt="middle_navigation_buttons_dp750"
-                      width="15"
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/settings_server_dp750.png"
+                      alt="settings_server_dp750"
+                      width="600"
                     />
-                    попадаем в раздел Меню
-                  </li>
-                  <p></p>
-                  <img src="./img/dp750/settings/status_dp750.png" alt="status_dp750" width="200" />
-                  <li>
-                    Кнопками навигации на трубке
+                    <li>Нажмите «Сохранить и применить»</li>
+                  </ol>
+                </div>
+                <!-- ?Настройка SIP-аккаунтов -->
+                <div id="setting-account-dp750" class="tab-pane fade">
+                  <div class="page-header">
+                    <h3>Настройка SIP-аккаунтов</h3>
+                  </div>
+                  <ol>
+                    <p></p>
                     <img
-                      src="./img/dp750/settings/all_navigation_buttons_dp750.png"
-                      alt="all_navigation_buttons_dp750"
-                      width="20"
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/setting_sip_accounts.png"
+                      alt=""
+                      width="600"
                     />
-                    выбираем Статус и нажимаем кнопку
+                    <li>Перейдите в меню «DECT» > раздел "Настройки SIP учетной записи"</li>
+                    <p></p>
                     <img
-                      src="./img/dp750/settings/middle_navigation_buttons_dp750.png"
-                      alt="middle_navigation_buttons_dp750"
-                      width="15"
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/settings_clean_accounts.png"
+                      alt=""
+                      width="600"
                     />
-                  </li>
-                  <p></p>
-                  <img
-                    src="./img/dp750/settings/status_base_dp750.png"
-                    alt="status_base_dp750"
-                    width="200"
-                  />
-                  <li>Выбираем "Статус базы"</li>
-                  <p></p>
-                  <img
-                    src="./img/dp750/settings/ip_base_dp750.png"
-                    alt="ip_base_dp750"
-                    width="200"
-                  />
-                  <li>
-                    И видим IP базы Grandstream DP750. В нашем случае ip адрес следующий:
-                    192.168.2.34
-                  </li>
-                  <p></p>
-                  P.S.Также получить информацию об IP адресе можно с помощью вашего роутера -
-                  войдите в веб интерфейс роутера на страницу с таблицей выданных IP адресов и по
-                  МАС адресу телефона определить его IP адрес. МАС адрес указан на стикере,
-                  приклеенном на корпусе.
-                  <p></p>
-
-                  <article id="ss_dp750">
-                    <h3>Настройкам SIP-сервера через WEB интерфейс</h3>
-                  </article>
-                  <p>
-                    <b>Внимание: </b> Телефон и компьютер, на котором вы будете выполнять настройку,
-                    должны находиться в одной сети.
-                  </p>
-                  <img
-                    src="./img/dp750/settings/setting_ip_750.png"
-                    alt="setting_ip_750"
-                    width="900"
-                  />
-                  <li>
-                    Для входа на веб.интерфейс телефонной базы откройте браузер (например Google
-                    Chrome, Mozilla Firefox и т.д) на вашем компьютере, введите IP-адрес телефона в
-                    адресную строку и нажмите кнопку Enter на клавиатуре. У вас откроется страница с
-                    запросом авторизационных данных.
-                  </li>
-                  <p></p>
-                  <img src="./img/dp750/settings/pass_dp750.png" alt="pass_dp750" width="400" />
-                  <li>
-                    Меняем язык на русский. В нашем случаи логин <b>admin</b> пароль указан на
-                    коробке базы и на самой базе c обратной стороны.
-                  </li>
-                  <p></p>
-                  <img
-                    src="./img/dp750/settings/settings_profile_dp750.png"
-                    alt="settings_profile_dp750"
-                    width="600"
-                  />
-                  <p></p>
-                  <li>Зайдите в меню «Профили» > выберите «Профиль 1» > раздел «Общее»</li>
-                  <img
-                    src="./img/dp750/settings/settings_server_dp750.png"
-                    alt="settings_server_dp750"
-                    width="600"
-                  />
-                  <li>Нажмите «Сохранить и применить»</li>
-                </ol>
-              </div>
-
-              <!-- ?Настройка SIP-аккаунтов -->
-              <div id="setting-account-dp750" class="tab-pane fade">
-                <h3>Настройка SIP-аккаунтов</h3>
-                <h4>Настройка SIP-аккаунтов</h4>
-                <ol>
-                  <p></p>
-                  <img src="./img/dp750/settings/setting_sip_accounts.png" alt="" width="600" />
-                  <li>Перейдите в меню «DECT» > раздел "Настройки SIP учетной записи"</li>
-                  <p></p>
-                  <img src="./img/dp750/settings/settings_clean_accounts.png" alt="" width="600" />
-                  <p></p>
-                  <li>
-                    <ul>
-                      <li>ИД SIP-пользователя - указываем номер который хотим зарегистрировать</li>
-                      <li>
-                        Аутентификационный ID - указываем номер который хотим зарегистрировать
-                      </li>
-                      <li>Пароль - указываете пароль из личного кабинета</li>
-                      <li>
-                        Имя: можно написать любое, в нашем примере "110" (будет отображаться на
-                        экране трубки)
-                      </li>
-                      <li>
-                        Профиль - выбираем один из ранее настроенных профилей, ранее мы настраивали
-                        "Профиль1"
-                      </li>
-                      <li>
-                        Режим трубки - выбираем номер трубки к которой будет привязан данный номер
-                      </li>
-                      <li>Проверяем пункт "Аккаунт активен" должен находится в положение "Да"</li>
-                    </ul>
-                  </li>
-                  <p></p>
-                  Ниже настройки сразу пяти трубок на примере нашего офиса
-                  <p></p>
-                  <img src="./img/dp750/settings/setting_accounts.png" alt="" width="600" />
-                  <p></p>
-                  <li>
-                    Заполните поля с учетом выше указанной инструкции, Нажмите "Сохранить и
-                    применить"
-                  </li>
-                  <p></p>
-                  <img src="./img/dp750/settings/settings_dect_line1.png" alt="" width="600" />
-                  <li>
-                    В вкладке "СОСТОЯНИЕ" > "Состояние учетной записи" видим что все трубки
-                    зарегистрированы, но находятся на одной линии. Перейдите в раздел «Настройки
-                    линии трубки» и назначьте каждой линии свою трубку, как указано на примере ниже.
-                  </li>
-                  <p></p>
-                  <img src="./img/dp750/settings/settings_dect_line3.png" alt="" width="600" />
-                  <p></p>
-                  <li>После присвоении линий к трубкам нажмите "Сохранить и применить"</li>
-                  <img src="./img/dp750/settings/settingd_finish1.png" alt="" width="600" />
-                  <li>
-                    Снова переходим в вкладку "СОСТОЯНИЕ" > "Состояние учетной записи" и проверяем
-                    что к каждой трубке присвоена отдельная линия.
-                  </li>
-                  <p></p>
-                  <p>
-                    Теперь попробуйте сделать звонок с телефона на Ваш сотовый и проверить работает
-                    ли связь в действительности.
-                  </p>
-                </ol>
+                    <p></p>
+                    <li>
+                      <ul>
+                        <li>
+                          ИД SIP-пользователя - указываем номер который хотим зарегистрировать
+                        </li>
+                        <li>
+                          Аутентификационный ID - указываем номер который хотим зарегистрировать
+                        </li>
+                        <li>Пароль - указываете пароль из личного кабинета</li>
+                        <li>
+                          Имя: можно написать любое, в нашем примере "110" (будет отображаться на
+                          экране трубки)
+                        </li>
+                        <li>
+                          Профиль - выбираем один из ранее настроенных профилей, ранее мы
+                          настраивали "Профиль1"
+                        </li>
+                        <li>
+                          Режим трубки - выбираем номер трубки к которой будет привязан данный номер
+                        </li>
+                        <li>Проверяем пункт "Аккаунт активен" должен находится в положение "Да"</li>
+                      </ul>
+                    </li>
+                    <p></p>
+                    Ниже настройки сразу пяти трубок на примере нашего офиса
+                    <p></p>
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/setting_accounts.png"
+                      alt="setting_accounts"
+                      width="600"
+                    />
+                    <p></p>
+                    <li>
+                      Заполните поля с учетом выше указанной инструкции, Нажмите "Сохранить и
+                      применить"
+                    </li>
+                    <p></p>
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/settings_dect_line1.png"
+                      alt=""
+                      width="600"
+                    />
+                    <li>
+                      В вкладке "СОСТОЯНИЕ" > "Состояние учетной записи" видим что все трубки
+                      зарегистрированы, но находятся на одной линии. Перейдите в раздел «Настройки
+                      линии трубки» и назначьте каждой линии свою трубку, как указано на примере
+                      ниже.
+                    </li>
+                    <p></p>
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/settings_dect_line3.png"
+                      alt=""
+                      width="600"
+                    />
+                    <p></p>
+                    <li>После присвоении линий к трубкам нажмите "Сохранить и применить"</li>
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/settingd_finish1.png"
+                      alt=""
+                      width="600"
+                    />
+                    <li>
+                      Снова переходим в вкладку "СОСТОЯНИЕ" > "Состояние учетной записи" и проверяем
+                      что к каждой трубке присвоена отдельная линия.
+                    </li>
+                    <p></p>
+                    <p>
+                      Теперь попробуйте сделать звонок с телефона на Ваш сотовый и проверить
+                      работает ли связь в действительности.
+                    </p>
+                  </ol>
+                </div>
                 <!-- ?Информация о IP Grandstream DP750 -->
                 <div id="setting-info-ip-dp750" class="tab-pane fade">
-                  <h3>Информация о IP Grandstream DP750</h3>
+                  <div class="page-header">
+                    <h3>Информация о IP Grandstream DP750</h3>
+                  </div>
                   <h4>
                     Как узнать IP базы Grandstream DP750 с помощью дополнительной трубки Grandstream
                     DP720
                   </h4>
                   <p></p>
                   <ol>
-                    <img src="./img/dp750/settings/menu_dp750.png" alt="menu_dp750" width="200" />
+                    <img
+                      class="img-thumbnail"
+                      src="./img/dp750/settings/menu_dp750.png"
+                      alt="menu_dp750"
+                      width="200"
+                    />
                     <li>
                       Кнопками навигации на трубке
                       <img
@@ -1551,6 +1793,7 @@
                     </li>
                     <p></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/dp750/settings/status_base_dp750.png"
                       alt="status_base_dp750"
                       width="200"
@@ -1558,6 +1801,7 @@
                     <li>Выбираем "Статус базы"</li>
                     <p></p>
                     <img
+                      class="img-thumbnail"
                       src="./img/dp750/settings/ip_base_dp750.png"
                       alt="ip_base_dp750"
                       width="200"
@@ -1573,24 +1817,30 @@
                     приклеенном на корпусе.
                   </ol>
                 </div>
-
-                <div id="setting-time-gxp16xx" class="tab-pane fade">
-                  <h3>Настройка времени</h3>
+                <div id="" class="tab-pane fade">
+                  <div class="page-header">
+                    <h3>Настройка времени</h3>
+                  </div>
                   <p></p>
                 </div>
-                <div id="setting-language-gxp16xx" class="tab-pane fade">
-                  <h3>Настройка языка</h3>
+                <div id="" class="tab-pane fade">
+                  <div class="page-header">
+                    <h3>Настройка времени</h3>
+                  </div>
                   <p></p>
                   <p>
                     Для того чтобы изменить язык дисплея телефона при первичном подключении зайдите
                     в «Меню» > «Preference» > «Display language» > из списка выберите «Русский»
                   </p>
                 </div>
-                <div id="description-gxp16xx" class="tab-pane fade">
-                  <h3>Описание клавиатуры для IP-Телефона Grandstream XP1610/1615</h3>
+                <div id="" class="tab-pane fade">
+                  <div class="page-header">
+                    <h3>Настройка времени</h3>
+                  </div>
                   <p></p>
                   <li>
                     <img
+                      class="img-thumbnail"
                       src="./img/gxp16xx/description/description_gxp16xx.png"
                       alt="description_gxp16xx"
                       width="600"
@@ -1607,24 +1857,24 @@
                     </ol>
                   </li>
                 </div>
-              </div>
+                <div id="" class="tab-pane fade">
+                  <div class="page-header">
+                    <h3>Настройка времени</h3>
+                  </div>
+                  <p></p>
 
-              <div id="instruction-gxp16xx" class="tab-pane fade">
-                <h3>
-                  Краткое руководство пользования для IP-Телефона Grandstream
-                  XP1610/1615/1620/1625/1628/1630
-                </h3>
-                <p></p>
-
-                <img
-                  src="./img/gxp16xx/instruction/instruction_gxp16xx.jpg"
-                  alt="instruction_gxp16xx"
-                  width="1200"
-                />
-              </div>
-              <div id="malfunction-gxp16xx" class="tab-pane fade">
-                <h3>Неисправность</h3>
-                <p>Неисправность gxp16xx</p>
+                  <img
+                    src="./img/gxp16xx/instruction/instruction_gxp16xx.jpg"
+                    alt="instruction_gxp16xx"
+                    width="1200"
+                  />
+                </div>
+                <div id="" class="tab-pane fade">
+                  <div class="page-header">
+                    <h3>Настройка времени</h3>
+                  </div>
+                  <p>Неисправность gxp16xx</p>
+                </div>
               </div>
             </div>
           </div>
